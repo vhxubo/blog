@@ -1,0 +1,21 @@
+name: Create Posts
+on: [push, issues]
+jobs:
+  create-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install
+        run: cd app && npm install
+      - name: Create
+        run: cd app && npm run start
+        env:
+          REPOSITORY: ${{github.repository}}
+          TOKEN: ${{secrets.token}}
+      - name: update
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Update Posts"
+          git push
