@@ -4,14 +4,15 @@ const fs = require('fs')
 const path = '../posts'
 
 const octokit = new Octokit({ auth: process.env.TOKEN })
+const repository = process.env.REPOSITORY.split('/')
 
 // 遍历所有的issues，根据labels生成到各个标签目录下面，没有标签的放置在posts下面
 ;(async () => {
   const { data: issues } = await octokit.request(
     'GET /repos/{owner}/{repo}/issues',
     {
-      owner: 'vhxubo',
-      repo: 'blog',
+      owner: repository[0],
+      repo: repository[1],
     }
   )
   if (!fs.existsSync(path)) fs.mkdirSync(path)
