@@ -1,6 +1,4 @@
-# luci-app
-
-[#22](https://github.com/vhxubo/blog/issues/22)
+# luci-app [#22](https://github.com/vhxubo/blog/issues/22)
 
 ## MVC 框架开发
 

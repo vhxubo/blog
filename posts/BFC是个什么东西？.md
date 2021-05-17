@@ -1,6 +1,4 @@
-# BFC是个什么东西？
-
-[#39](https://github.com/vhxubo/blog/issues/39)
+# BFC是个什么东西？ [#39](https://github.com/vhxubo/blog/issues/39)
 
 > 块格式化上下文（Block Formatting Context，BFC） 是Web页面的可视CSS渲染的一部分，是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域。
 

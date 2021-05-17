@@ -19,9 +19,9 @@ const octokit = new Octokit({ auth: process.env.TOKEN })
   issues.forEach((item) => {
     console.log(item)
     const { title, body, html_url: url, number } = item
-    const result = `# ${title}\n\n[#${number}](${url})\n\n${body}`
+    const result = `# ${title} [#${number}](${url})\n\n${body}`
     const postPath = `${path}/${title}.md`
-    posts.push(`- [${title}](${postPath})`)
+    posts.push(`- [${title}](${encodeURI(postPath)})`)
 
     fs.writeFileSync(postPath, result)
   })

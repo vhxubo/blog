@@ -1,6 +1,4 @@
-# Vue3 组件
-
-[#24](https://github.com/vhxubo/blog/issues/24)
+# Vue3 组件 [#24](https://github.com/vhxubo/blog/issues/24)
 
 ## 参考链接
 

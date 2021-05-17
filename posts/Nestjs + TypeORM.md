@@ -1,6 +1,4 @@
-# Nestjs + TypeORM
-
-[#37](https://github.com/vhxubo/blog/issues/37)
+# Nestjs + TypeORM [#37](https://github.com/vhxubo/blog/issues/37)
 
 ## 在Module互相引用的问题
 > [nestjs - Nest can't resolve dependencies of the AuthService (?). Please make sure that the argument at index [0] is available in the AuthModule context - Stack Overflow](https://stackoverflow.com/questions/54370079/nest-cant-resolve-dependencies-of-the-authservice-please-make-sure-that-th/54370191)

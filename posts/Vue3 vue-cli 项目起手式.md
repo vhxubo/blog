@@ -1,6 +1,4 @@
-# Vue3 vue-cli 项目起手式
-
-[#45](https://github.com/vhxubo/blog/issues/45)
+# Vue3 vue-cli 项目起手式 [#45](https://github.com/vhxubo/blog/issues/45)
 
 ## 配置`.pretterrc`和`.eslintrc.js`
 

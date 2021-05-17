@@ -1,6 +1,4 @@
-# VSCode + Neo Vim
-
-[#38](https://github.com/vhxubo/blog/issues/38)
+# VSCode + Neo Vim [#38](https://github.com/vhxubo/blog/issues/38)
 
 最开始的时候接触到vim，学习了好长时间，改了键位等等，但是最后还是死在了对vim的配置上面。
 

@@ -1,6 +1,4 @@
-# Windows Terminal 配置
-
-[#47](https://github.com/vhxubo/blog/issues/47)
+# Windows Terminal 配置 [#47](https://github.com/vhxubo/blog/issues/47)
 
 Windows Terminal更新了配置文件方案，相比之前的json文件方便多了，正好电脑上次配置的没了，这次重新配置一下
 

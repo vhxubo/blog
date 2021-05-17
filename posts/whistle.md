@@ -1,6 +1,4 @@
-# whistle
-
-[#46](https://github.com/vhxubo/blog/issues/46)
+# whistle [#46](https://github.com/vhxubo/blog/issues/46)
 
 ## 作为本地反代服务器
 

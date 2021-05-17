@@ -1,6 +1,4 @@
-# Reactjs ♥
-
-[#49](https://github.com/vhxubo/blog/issues/49)
+# Reactjs ♥ [#49](https://github.com/vhxubo/blog/issues/49)
 
 ## `useState`
 

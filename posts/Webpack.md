@@ -1,6 +1,4 @@
-# Webpack
-
-[#32](https://github.com/vhxubo/blog/issues/32)
+# Webpack [#32](https://github.com/vhxubo/blog/issues/32)
 
 Webpack是一个前端打包工具，只能用于采用模块化开发的项目。
 

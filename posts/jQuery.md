@@ -1,6 +1,4 @@
-# jQuery
-
-[#44](https://github.com/vhxubo/blog/issues/44)
+# jQuery [#44](https://github.com/vhxubo/blog/issues/44)
 
 2021.04.17
 今天心血来潮，想着用jQuery来做一个浏览器插件吧，结果差点掉坑里出不来了

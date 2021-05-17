@@ -1,6 +1,4 @@
-# Node Modules
-
-[#50](https://github.com/vhxubo/blog/issues/50)
+# Node Modules [#50](https://github.com/vhxubo/blog/issues/50)
 
 这个问题困扰了我好长时间，在`module.exports` `exports` `export`中迷惑不已
 

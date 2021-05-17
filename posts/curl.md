@@ -1,6 +1,4 @@
-# curl
-
-[#43](https://github.com/vhxubo/blog/issues/43)
+# curl [#43](https://github.com/vhxubo/blog/issues/43)
 
 ## Tip
 

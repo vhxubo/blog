@@ -1,6 +1,4 @@
-# Puppeteer
-
-[#23](https://github.com/vhxubo/blog/issues/23)
+# Puppeteer [#23](https://github.com/vhxubo/blog/issues/23)
 
 ## 参考链接
 

@@ -1,6 +1,4 @@
-# VSCode 自定义主题样式
-
-[#51](https://github.com/vhxubo/blog/issues/51)
+# VSCode 自定义主题样式 [#51](https://github.com/vhxubo/blog/issues/51)
 
 在别的视频中看到别人的`className`显示很好看，于是想尽方法去寻找那个字体
 

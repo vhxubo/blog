@@ -1,6 +1,4 @@
-# Prettier
-
-[#42](https://github.com/vhxubo/blog/issues/42)
+# Prettier [#42](https://github.com/vhxubo/blog/issues/42)
 
 ## 常用配置
 

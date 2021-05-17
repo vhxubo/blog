@@ -1,6 +1,4 @@
-# Vue2
-
-[#41](https://github.com/vhxubo/blog/issues/41)
+# Vue2 [#41](https://github.com/vhxubo/blog/issues/41)
 
 - data不能使用()=>
 - 响应式不能监听到数组的变动，需要使用`vm.$set`对数组数据进行更新

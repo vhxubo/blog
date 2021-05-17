@@ -1,6 +1,4 @@
-# Eleventy (11ty)
-
-[#40](https://github.com/vhxubo/blog/issues/40)
+# Eleventy (11ty) [#40](https://github.com/vhxubo/blog/issues/40)
 
 Eleventy (11ty)是一个简单的静态博客生成器，支持liquid
 
