@@ -19,6 +19,13 @@ Import-Module oh-my-posh
 Set-PoshPrompt -Theme powerlevel10k_lean
 ```
 
+## 设置代理
+
+```bash
+$env:http_proxy="http://127.0.0.1:7890"
+$env:https_proxy="http://127.0.0.1:7890"
+```
+
 ## 参考
 
 - [Windows Terminal Powerline Setup | Microsoft Docs](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup)
