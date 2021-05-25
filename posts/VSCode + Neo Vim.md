@@ -170,6 +170,8 @@ To lowercase, uppercase, or toggle-case:
 - `:%s/test/bool/g` 替换所有行的
 - `:5,12s/foo/bar/g` 替换5到12行
 - [Search and replace | Vim Tips Wiki | Fandom](https://vim.fandom.com/wiki/Search_and_replace)
+- `<C-p>` 在代码补全窗口下等同于 `Up`
+- `<C-n>` 在代码补全窗口下等同于 `Down`
 - 删除`d` `dd` `dnw`
 - 复制`y` `yy` `ynw`
 - 修改 `s` `S`修改整行
