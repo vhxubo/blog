@@ -12,3 +12,21 @@ Windows
   "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\im-select.exe",
   "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\im-select.exe {im}",
 ```
+
+## 保存退出插入模式
+
+- 安装VSCode插件: [macros - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=geddski.macros)
+- 添加配置
+```json
+  "macros": {
+    "saveAndEscapeVim": ["workbench.action.files.save", "extension.vim_escape"]
+  },
+```
+- 添加键映射
+```json
+  {
+    "key": "ctrl+s",
+    "command": "macros.saveAndEscapeVim",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  }
+```
