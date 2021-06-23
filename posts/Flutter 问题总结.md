@@ -9,3 +9,7 @@
 or
 
  just downloaded and installed Android SDK Command-line tools from Android SDK Manager. 
+
+## 修改应用名称
+
+> https://stackoverflow.com/questions/51534616/how-to-change-package-name-in-flutter
