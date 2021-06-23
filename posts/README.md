@@ -1,5 +1,6 @@
 # POSTS
 
+- [Flutter 问题总结](../posts/Flutter%20%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md)
 - [VSCodeVim 配置](../posts/VSCodeVim%20%E9%85%8D%E7%BD%AE.md)
 - [VSCode 配置](../posts/VSCode%20%E9%85%8D%E7%BD%AE.md)
 - [Git](../posts/Git.md)
@@ -29,4 +30,3 @@
 - [微信小程序登录](../posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%BD%95.md)
 - [青年大学习参考](../posts/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83.md)
 - [洛阳理工健康上报系统问题剖析](../posts/%E6%B4%9B%E9%98%B3%E7%90%86%E5%B7%A5%E5%81%A5%E5%BA%B7%E4%B8%8A%E6%8A%A5%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98%E5%89%96%E6%9E%90.md)
-- [夜间模式](../posts/%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F.md)
