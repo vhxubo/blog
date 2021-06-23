@@ -13,3 +13,5 @@ or
 ## 修改应用名称
 
 > https://stackoverflow.com/questions/51534616/how-to-change-package-name-in-flutter
+
+- https://pub.dev/packages/rename
