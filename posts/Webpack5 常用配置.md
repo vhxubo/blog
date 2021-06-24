@@ -1,6 +1,6 @@
 # Webpack5 常用配置 [#57](https://github.com/vhxubo/blog/issues/57)
 
-# 插件
+## 插件
 
 ### [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
 
