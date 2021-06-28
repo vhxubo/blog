@@ -10,3 +10,12 @@
   }
 ```
     
+## 外部使用 Windows Terminal
+
+> https://stackoverflow.com/questions/62894666/path-and-name-of-exe-file-of-windows-terminal-preview
+
+快捷键: `Ctrl + Shift + C`
+配置项
+```
+"terminal.external.windowsExec": "%LocalAppData%\\Microsoft\\WindowsApps\\wt.exe"
+```
