@@ -11,3 +11,8 @@ git branch
 // 上传分支
 git push origin HEAD -u
 ```
+
+## tag 和 releases
+
+> 标签是 Git 中的概念，而 releases 则是 Github、码云等源码托管商所提供的更高层的概念。Git 本身是没有 releases 这个概念，只有 tag。两者之间的关系则是，release 基于 tag，为 tag 添加更丰富的信息，一般是编译好的文件。[Git tag 和 GitHub releases - 蓝桥云课](https://www.lanqiao.cn/courses/reports/1379575/)
+
