@@ -1,5 +1,6 @@
 # POSTS
 
+- [IdeaVim 配置](../posts/IdeaVim%20%E9%85%8D%E7%BD%AE.md)
 - [Webpack5 常用配置](../posts/Webpack5%20%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE.md)
 - [Flutter 问题总结](../posts/Flutter%20%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md)
 - [VSCodeVim 配置](../posts/VSCodeVim%20%E9%85%8D%E7%BD%AE.md)
@@ -29,4 +30,3 @@
 - [Vue 3](../posts/Vue%203.md)
 - [个人主页](../posts/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.md)
 - [微信小程序登录](../posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%BD%95.md)
-- [青年大学习参考](../posts/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83.md)
