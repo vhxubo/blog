@@ -10,7 +10,7 @@
 
 # init.vim
 
-> updatetime: 2021年5月3日21点12分
+> updatetime: 2021年7月4日
 path: C:\Users\vhxubo\AppData\Local\nvim
 
 ```
@@ -19,6 +19,7 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 
 Plug 'tpope/vim-surround'
 Plug 'asvetliakov/vim-easymotion'
+Plug 'vim-scripts/argtextobj.vim'
 
 call plug#end()
 
@@ -39,6 +40,8 @@ nnoremap <Leader>. <Cmd>call VSCodeNotify('editor.action.quickFix')<CR>
 
 " VSCode侧边栏
 nnoremap <Leader>b <Cmd>call VSCodeNotify('workbench.action.toggleSidebarVisibility')<CR>
+
+
 
 ```
 
