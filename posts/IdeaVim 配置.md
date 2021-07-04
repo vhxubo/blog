@@ -78,3 +78,9 @@ set keep-english-in-normal-and-restore-in-insert
 let mapleader = "\<Space>"
 set easymotion
 ```
+
+## 使用键盘创建文件
+
+> [[idea] 如何脱离鼠标快速新建文件_朱同学的博客-CSDN博客_idea新建文件快捷键](https://blog.csdn.net/a755199443/article/details/89488549)
+
+`Alt` + `Insert`
