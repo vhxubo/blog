@@ -9,7 +9,7 @@ set keep-english-in-normal-and-restore-in-insert
 let mapleader = " "
 
 set easymotion
-set surround.
+set surround
 ```
 
 ## 配置 IdeaVimExtension
