@@ -6,10 +6,17 @@ File -> Settings -> Plugins 搜索安装 **IdeaVim** 和 **IdeaVimExtension** �
 ```
 set keep-english-in-normal-and-restore-in-insert
 
-let mapleader = " "
+let mapleader=" "
+set clipboard^=unnamed,unnamedplus
 
+set commentary
 set easymotion
 set surround
+set argtextobj
+
+
+let g:argtextobj_pairs="[:],(:),<:>"
+
 ```
 
 ## 配置 IdeaVimExtension
