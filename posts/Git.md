@@ -30,3 +30,11 @@ git tag -a v1.0 9fceb02
 ```
 git tag -d v1.0
 ```
+
+
+### 上传 tags
+> [git tag创建、远程推送、回退以及强推push -f_QH_JAVA的专栏-CSDN博客](https://blog.csdn.net/QH_JAVA/article/details/77979622)
+
+```
+git push --tags
+```
