@@ -10,8 +10,8 @@
 
 # init.vim
 
-> updatetime: 2021年7月4日
-path: C:\Users\vhxubo\AppData\Local\nvim
+> updatetime: 2021年7月9日
+path: C:\Users\vhxubo\AppData\Local\nvim\init.vim
 
 ```
 " 配置插件
@@ -41,8 +41,11 @@ nnoremap <Leader>. <Cmd>call VSCodeNotify('editor.action.quickFix')<CR>
 " VSCode侧边栏
 nnoremap <Leader>b <Cmd>call VSCodeNotify('workbench.action.toggleSidebarVisibility')<CR>
 
-
-
+" 复制后高亮
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
+augroup END
 ```
 
 ## 配置`Ctrl+S`保存文件并退出insert模式
