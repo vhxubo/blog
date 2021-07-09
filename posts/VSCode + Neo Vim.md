@@ -44,7 +44,7 @@ nnoremap <Leader>b <Cmd>call VSCodeNotify('workbench.action.toggleSidebarVisibil
 " 复制后高亮
 augroup highlight_yank
     autocmd!
-    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=100}
+    au TextYankPost * silent! lua vim.highlight.on_yank()
 augroup END
 ```
 
