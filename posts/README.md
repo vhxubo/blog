@@ -1,5 +1,6 @@
 # POSTS
 
+- [OpenWrt](../posts/OpenWrt.md)
 - [Spring Boot 学习](../posts/Spring%20Boot%20%E5%AD%A6%E4%B9%A0.md)
 - [IdeaVim 配置](../posts/IdeaVim%20%E9%85%8D%E7%BD%AE.md)
 - [Webpack5 常用配置](../posts/Webpack5%20%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE.md)
@@ -29,4 +30,3 @@
 - [Webpack4 学习记录](../posts/Webpack4%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md)
 - [JavaScript](../posts/JavaScript.md)
 - [Vue 3](../posts/Vue%203.md)
-- [个人主页](../posts/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.md)
