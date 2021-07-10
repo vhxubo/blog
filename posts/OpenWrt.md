@@ -7,4 +7,10 @@ https://github.com/zzsj0928/luci-app-pushbot
 安装
 
 - luci-app-pushbot
-- wrtbwmon
+- luci-app-wrtbwmon
+
+### 配置 luci-app-wrtbwmon
+
+通过 https://github.com/brvphoenix/wrtbwmon/releases 下载上传到后台进行安装 wrtbwmon
+
+通过在线软件包或者 https://github.com/brvphoenix/luci-app-wrtbwmon/releases 安装 luci-app-wrtbwmon
