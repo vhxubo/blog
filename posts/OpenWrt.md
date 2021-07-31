@@ -1,5 +1,10 @@
 # OpenWrt [#60](https://github.com/vhxubo/blog/issues/60)
 
+## Manjaro 编译
+> https://github.com/coolsnowwolf/lede/issues/2309
+
+安装 `openwrt-devel`
+
 ## 浏览器状态监控推送插件
 
 https://github.com/zzsj0928/luci-app-pushbot
