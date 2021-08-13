@@ -10,3 +10,11 @@ set number
 set rnu
 
 ```
+
+## Manjaro 下设置剪贴板
+
+> https://blog.csdn.net/weixin_43704946/article/details/106421747
+安装一个用于管理系统剪贴板的工具：sudo pacman -S xsel
+然后在.vimrc中添加一句：set clipboard+=unnamedplus即可
+
+此外, 从外部的剪贴板数据, 可以通过 `Shift + Insert` 粘贴到 vim/neovim 中
