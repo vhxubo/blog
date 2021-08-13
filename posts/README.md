@@ -1,5 +1,6 @@
 # POSTS
 
+- [NeoVim && Vim 配置](../posts/NeoVim%20&&%20Vim%20%E9%85%8D%E7%BD%AE.md)
 - [Linux 配置](../posts/Linux%20%E9%85%8D%E7%BD%AE.md)
 - [OpenWrt](../posts/OpenWrt.md)
 - [Spring Boot 学习](../posts/Spring%20Boot%20%E5%AD%A6%E4%B9%A0.md)
@@ -29,4 +30,3 @@
 - [2021.4.3](../posts/2021.4.3.md)
 - [前端面经](../posts/%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F.md)
 - [Webpack4 学习记录](../posts/Webpack4%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md)
-- [JavaScript](../posts/JavaScript.md)
