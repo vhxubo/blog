@@ -48,3 +48,12 @@ augroup END
 > 如何将 Vim 剪贴板里面的东西粘贴到 Vim 之外的地方？ - bingo的回答 - 知乎
 https://www.zhihu.com/question/19863631/answer/145592576
 此外, 从外部的剪贴板数据, 可以通过 `Shift + Insert` 粘贴到 vim/neovim 中
+
+> [Windows/Mac/Linux 如何将内容输出到剪贴板 - SegmentFault 思否](https://segmentfault.com/a/1190000024579429)
+```
+// 将输出复制至剪贴板
+$ echo "hello linux" | xsel
+
+// 将文件中的内容全部复制至剪贴板
+$ xsel < remade.md
+```
