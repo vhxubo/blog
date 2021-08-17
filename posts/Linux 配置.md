@@ -19,6 +19,11 @@ plugins=(
     zsh-autosuggestions
 )
 ```
+- 安装 fzf
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
 
 ## 终端
 
