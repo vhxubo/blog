@@ -5,10 +5,38 @@
 
 ```
 # ~/.config/nvim/init.vim
+call plug#begin()
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+    Plug 'preservim/nerdtree'
+call plug#end()
 
-set number
+set clipboard+=unnamedplus
+set nu
 set rnu
+set scrolloff=5
 
+" 设置tab缩进
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+
+
+function! CleverTab()
+        if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+                return "\<Tab>"
+        else
+                return "\<C-N>"
+        endif
+endfunction
+inoremap <Tab> <C-R>=CleverTab()<CR>
+
+" 复制后高亮
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank()
+augroup END
 ```
 
 ## Manjaro 下设置剪贴板
