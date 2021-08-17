@@ -12,11 +12,17 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
+- 安装 tldr
+```
+npm install -g tldr
+```
 
 ## oh-my-zsh 配置
 
 ```sh
 # 2021年 08月 17日 星期二 14:49:39 CST
+# ~/.zshrc
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="/home/vhxubo/.oh-my-zsh"
 ZSH_THEME="ys"
@@ -38,10 +44,28 @@ export BROWSER='/usr/bin/google-chrome-stable'
 
 ```
 
-- 安装 zsh-autosuggestions
-    > https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+### 自带插件
+
+- z 在目录中跳转, 命令 `z`
+- cp 提供带有进程的复制命令 `cpv` 
+- git 提供 git 相关 alias
+- sudo 连按两次 `Esc` 自动添加 sudo
+- extract 便捷的解压命令 `x`
+- colored-man-pages 高亮 man 帮助
+
+### 额外安装
+
+- git-open 提供快捷打开远程仓库命令, 127 错误时, 需注意配置 `$BROWSER`
+```
+git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
+```
+- zsh-autosuggestions 提供灰色的提示, `Ctrl + e` 或者 `→` 补全
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+- zsh-syntax-highlighting 提供命令高亮, 正确为绿色, 错误为红色
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ## 终端
