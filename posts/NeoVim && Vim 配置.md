@@ -52,7 +52,7 @@ https://www.zhihu.com/question/19863631/answer/145592576
 > [Windows/Mac/Linux 如何将内容输出到剪贴板 - SegmentFault 思否](https://segmentfault.com/a/1190000024579429)
 ```
 // 将输出复制至剪贴板
-$ echo "hello linux" | xsel
+$ echo "hello linux" | xsel -b
 
 // 将文件中的内容全部复制至剪贴板
 $ xsel < remade.md
