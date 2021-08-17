@@ -16,6 +16,22 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ```
 npm install -g tldr
 ```
+~/.tldrrc 
+```
+{
+  "themes": {
+    "ocean": {
+      "commandName": "bold, cyan",
+      "mainDescription": "",
+      "exampleDescription": "green",
+      "exampleCode": "cyan",
+      "exampleToken": "dim"
+    }
+  },
+  "theme": "ocean"
+}
+
+```
 
 ## oh-my-zsh 配置
 
