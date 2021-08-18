@@ -36,18 +36,24 @@ npm install -g tldr
 ## oh-my-zsh 配置
 
 ```sh
-# 2021年 08月 17日 星期二 14:49:39 CST
+# 2021年 08月 18日 星期三 16:09:17 CST
 # ~/.zshrc
+# cat ~/.zshrc | egrep -v '^#|^$' | xsel -b
 
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="/home/vhxubo/.oh-my-zsh"
-ZSH_THEME="ys"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
     z
     cp
     git
     sudo
     extract
+    vi-mode
+    safe-paste
     colored-man-pages
     git-open
     zsh-autosuggestions
@@ -57,6 +63,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='nvim'
 export BROWSER='/usr/bin/google-chrome-stable'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ```
 
