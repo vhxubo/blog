@@ -71,12 +71,14 @@ export BROWSER='/usr/bin/google-chrome-stable'
 
 - z 在目录中跳转, 命令 `z`
 - cp 提供带有进程的复制命令 `cpv` 
+- npm 提供 npm 相关 alias
 - git 提供 git 相关 alias
 - sudo 连按两次 `Esc` 自动添加 sudo
 - extract 便捷的解压命令 `x`
 - vi-mode 使用 vim 快捷键操作命令行, `Esc` / `Ctrl+[`
 - safe-paste 安全粘贴, 防止粘贴后直接执行
 - colored-man-pages 高亮 man 帮助
+- web-search 命令行内快速搜索, bing google
 
 ### 额外安装
 
