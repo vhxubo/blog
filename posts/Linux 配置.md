@@ -79,6 +79,7 @@ export BROWSER='/usr/bin/google-chrome-stable'
 - safe-paste 安全粘贴, 防止粘贴后直接执行
 - colored-man-pages 高亮 man 帮助
 - web-search 命令行内快速搜索, bing google
+- command-not-found 找命令所在的安装包
 
 ### 额外安装
 
