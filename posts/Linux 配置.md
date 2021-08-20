@@ -74,6 +74,8 @@ export BROWSER='/usr/bin/google-chrome-stable'
 - git 提供 git 相关 alias
 - sudo 连按两次 `Esc` 自动添加 sudo
 - extract 便捷的解压命令 `x`
+- vi-mode 使用 vim 快捷键操作命令行, `Esc` / `Ctrl+[`
+- safe-paste 安全粘贴, 防止粘贴后直接执行
 - colored-man-pages 高亮 man 帮助
 
 ### 额外安装

@@ -4,11 +4,24 @@
 - [Top 50 Vim Configuration Options - ShortcutFoo Blog](https://www.shortcutfoo.com/blog/top-50-vim-configuration-options/)
 
 ```
-# ~/.config/nvim/init.vim
+" ~/.config/nvim/init.vim
 call plug#begin()
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
     Plug 'preservim/nerdtree'
+    Plug 'mhinz/vim-startify'
+    Plug 'tpope/vim-commentary'
+    Plug 'tpope/vim-surround'
+    Plug 'dracula/vim'
+    Plug 'vim-airline/vim-airline'
 call plug#end()
+
+colorscheme dracula
+let g:airline_theme='dracula'
+
+set cursorline
+
+let mapleader=','
+map <leader>n :NERDTreeToggle<CR>
 
 set clipboard+=unnamedplus
 set nu
