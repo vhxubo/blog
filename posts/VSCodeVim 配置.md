@@ -5,6 +5,7 @@
 Windows
 
 - 安装英文(美国)输入法
+- 微软拼音调整为使用老版本
 - 下载 [im-select](https://github.com/daipeihust/im-select)
 ```
   "vim.autoSwitchInputMethod.enable": true,
