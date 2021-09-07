@@ -17,6 +17,10 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt-get install neovim
 ```
+- 安装 nvm
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
 - 安装 fzf
 ```
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
