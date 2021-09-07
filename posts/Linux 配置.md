@@ -10,6 +10,13 @@ sudo apt install zsh
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+- 安装 Neovim
+```
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
+```
 - 安装 fzf
 ```
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
