@@ -3,6 +3,11 @@
 - [Vimrc Configuration Guide - How to Customize Your Vim Code Editor with Mappings, Vimscript, Status Line, and More](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/)
 - [Top 50 Vim Configuration Options - ShortcutFoo Blog](https://www.shortcutfoo.com/blog/top-50-vim-configuration-options/)
 
+
+```
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
 ```
 " ~/.config/nvim/init.vim
 call plug#begin()
