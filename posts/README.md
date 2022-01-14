@@ -1,5 +1,6 @@
 # POSTS
 
+- [template vs Component](../posts/template%20vs%20Component.md)
 - [Less CSS 预处理](../posts/Less%20CSS%20%E9%A2%84%E5%A4%84%E7%90%86.md)
 - [Vue 2](../posts/Vue%202.md)
 - [NeoVim && Vim 配置](../posts/NeoVim%20&&%20Vim%20%E9%85%8D%E7%BD%AE.md)
@@ -29,4 +30,3 @@
 - [VSCode + Neo Vim](../posts/VSCode%20+%20Neo%20Vim.md)
 - [Nestjs + TypeORM](../posts/Nestjs%20+%20TypeORM.md)
 - [数据接口](../posts/%E6%95%B0%E6%8D%AE%E6%8E%A5%E5%8F%A3.md)
-- [2021.4.3](../posts/2021.4.3.md)
