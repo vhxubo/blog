@@ -31,7 +31,10 @@
 }
 ```
 
+变量是拥有作用域的
+
 ## Operations
+
 变量可以进行运算, 单位**按照第一次出现的单位计算**
 ```less
 // numbers are converted into the same units
@@ -60,7 +63,7 @@ Less 支持创建可复用的 Mixins, 建议一直使用带有括号的做法
 
 两种声明/使用方式: `.border` `.border()`
 
-
+可以与变量一起用, 还可以设置默认变量
 
 ##  Nesting
 
@@ -98,6 +101,23 @@ Less 支持创建可复用的 Mixins, 建议一直使用带有括号的做法
 }
 ```
 
+## @import
+
+```less
+// 直接引用会当成 less 文件引入
+@import 'variable.less';
+@import (keyword) "filename";
+```
+
+### keyword:
+
+- `reference`:??? use a Less file but do not output it
+- `inline`: 不编译文件, 直接将文件内容复制进去
+- `less`: 将文件强制转换为 less
+- `css`: 只保留引入行, 不引入文件内容
+- `once`: 引入一次同名文件, 默认行为
+- `multiple`: 引入多次同名文件
+- `optional`: 配置引入可选, 缺失引用时不报错
 
 ## 参考链接
 
