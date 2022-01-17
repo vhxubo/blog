@@ -31,12 +31,12 @@ const repository = process.env.REPOSITORY.split("/");
     let labelContent = "";
     if (labels.length > 0) {
       labelName = labels[0].name;
-      labelContent = `[\`${labelName}\`](https://github.com/${process.env.REPOSITORY}/issues?q=label:${labelName})\n\n`;
+      labelContent = `[${labelName}](https://github.com/${process.env.REPOSITORY}/issues?q=label:${labelName})\n\n`;
     }
     const result = `# ${title} [#${number}](${url})\n\n${
       labelContent ? labelContent : ""
     }${body}`;
-    const postName = labelName ? `[${labelName}](${title})` : title;
+    const postName = labelName ? `[${labelName}] ${title}` : title;
     const postPath = `${path}/${postName}.md`;
     posts.push(`- [${postName}](${encodeURI(postPath)})`);
 
