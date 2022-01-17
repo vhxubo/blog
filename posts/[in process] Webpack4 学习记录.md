@@ -1,6 +1,6 @@
 # Webpack4 学习记录 [#32](https://github.com/vhxubo/blog/issues/32)
 
-[`in process`](https://github.com/vhxubo/blog/issues?q=label:in process)
+[in process](https://github.com/vhxubo/blog/issues?q=label:in process)
 
 Webpack是一个前端打包工具，只能用于采用模块化开发的项目。
 

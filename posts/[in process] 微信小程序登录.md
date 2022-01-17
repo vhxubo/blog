@@ -1,6 +1,6 @@
 # 微信小程序登录 [#28](https://github.com/vhxubo/blog/issues/28)
 
-[`in process`](https://github.com/vhxubo/blog/issues?q=label:in process)
+[in process](https://github.com/vhxubo/blog/issues?q=label:in process)
 
 ## 参考链接
 

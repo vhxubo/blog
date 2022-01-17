@@ -1,6 +1,6 @@
 # JavaScript [#31](https://github.com/vhxubo/blog/issues/31)
 
-[`javascript`](https://github.com/vhxubo/blog/issues?q=label:javascript)
+[javascript](https://github.com/vhxubo/blog/issues?q=label:javascript)
 
 - [js 文件里，匿名函数开头有个 ；! 意义是什么？_happydecai的博客-CSDN博客](https://blog.csdn.net/happydecai/article/details/79289223)
 

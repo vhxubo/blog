@@ -1,6 +1,6 @@
 # 浏览器存储方案 [#17](https://github.com/vhxubo/blog/issues/17)
 
-[`javascript`](https://github.com/vhxubo/blog/issues?q=label:javascript)
+[javascript](https://github.com/vhxubo/blog/issues?q=label:javascript)
 
 ## 参考链接
 

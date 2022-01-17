@@ -1,6 +1,6 @@
 # IdeaVim 配置 [#58](https://github.com/vhxubo/blog/issues/58)
 
-[`vim`](https://github.com/vhxubo/blog/issues?q=label:vim)
+[vim](https://github.com/vhxubo/blog/issues?q=label:vim)
 
 > ["set" commands · JetBrains/ideavim Wiki](https://github.com/JetBrains/ideavim/wiki/%22set%22-commands)
 

@@ -1,6 +1,6 @@
 # Vue3 vue-cli 项目起手式 [#45](https://github.com/vhxubo/blog/issues/45)
 
-[`in process`](https://github.com/vhxubo/blog/issues?q=label:in process)
+[in process](https://github.com/vhxubo/blog/issues?q=label:in process)
 
 ## 配置`.pretterrc`和`.eslintrc.js`
 

@@ -1,6 +1,6 @@
 # template vs Component [#65](https://github.com/vhxubo/blog/issues/65)
 
-[`微信小程序`](https://github.com/vhxubo/blog/issues?q=label:微信小程序)
+[微信小程序](https://github.com/vhxubo/blog/issues?q=label:微信小程序)
 
 在使用 Component 时, 我们会发现, 在渲染出来的的 wxml 中, 拥有很多的 template
 

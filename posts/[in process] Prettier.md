@@ -1,6 +1,6 @@
 # Prettier [#42](https://github.com/vhxubo/blog/issues/42)
 
-[`in process`](https://github.com/vhxubo/blog/issues?q=label:in process)
+[in process](https://github.com/vhxubo/blog/issues?q=label:in process)
 
 ## 常用配置
 

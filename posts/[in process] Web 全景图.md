@@ -1,6 +1,6 @@
 # Web 全景图 [#19](https://github.com/vhxubo/blog/issues/19)
 
-[`in process`](https://github.com/vhxubo/blog/issues?q=label:in process)
+[in process](https://github.com/vhxubo/blog/issues?q=label:in process)
 
 ### 参考链接
 
