@@ -27,15 +27,16 @@ const repository = process.env.REPOSITORY.split("/");
   console.log(issues.length);
   issues.forEach((item) => {
     const { title, body, html_url: url, number, labels } = item;
+    let labelName = "";
     let labelContent = "";
     if (labels.length > 0) {
-      const labelName = labels[0].name;
+      labelName = labels[0].name;
       labelContent = `[\`${labelName}\`](https://github.com/${process.env.REPOSITORY}/issues?q=label:${labelName})\n\n`;
     }
     const result = `# ${title} [#${number}](${url})\n\n${
       labelContent ? labelContent : ""
     }${body}`;
-    const postName = `[${labelName}]${title}`;
+    const postName = labelName ? `[${labelName}](${title})` : title;
     const postPath = `${path}/${postName}.md`;
     posts.push(`- [${postName}](${encodeURI(postPath)})`);
 
