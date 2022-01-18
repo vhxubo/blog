@@ -55,7 +55,6 @@
 - [bash](../posts/bash.md)
 - [Golang](../posts/Golang.md)
 - [FFmpeg](../posts/FFmpeg.md)
-- [Nodejs](../posts/Nodejs.md)
 - [manjaro 配置](../posts/manjaro%20%E9%85%8D%E7%BD%AE.md)
 - [Windows  究极配置](../posts/Windows%20%20%E7%A9%B6%E6%9E%81%E9%85%8D%E7%BD%AE.md)
 - [Tool](../posts/Tool.md)
