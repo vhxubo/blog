@@ -31,7 +31,7 @@
 - [Nestjs + TypeORM](../posts/Nestjs%20+%20TypeORM.md)
 - [[总结] 2021.4.3](../posts/%5B%E6%80%BB%E7%BB%93%5D%202021.4.3.md)
 - [[总结] 前端面经](../posts/%5B%E6%80%BB%E7%BB%93%5D%20%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F.md)
-- [[in process] Webpack4 学习记录](../posts/%5Bin%20process%5D%20Webpack4%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md)
+- [[总结] Webpack4 学习记录](../posts/%5B%E6%80%BB%E7%BB%93%5D%20Webpack4%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md)
 - [[JavaScript] JavaScript](../posts/%5BJavaScript%5D%20JavaScript.md)
 - [[Vue] Vue 3](../posts/%5BVue%5D%20Vue%203.md)
 - [[in process] 微信小程序登录](../posts/%5Bin%20process%5D%20%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%BD%95.md)
