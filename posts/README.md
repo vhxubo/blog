@@ -30,7 +30,7 @@
 - [[vim] VSCode + Neo Vim](../posts/%5Bvim%5D%20VSCode%20+%20Neo%20Vim.md)
 - [Nestjs + TypeORM](../posts/Nestjs%20+%20TypeORM.md)
 - [[总结] 2021.4.3](../posts/%5B%E6%80%BB%E7%BB%93%5D%202021.4.3.md)
-- [前端面经](../posts/%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F.md)
+- [[总结] 前端面经](../posts/%5B%E6%80%BB%E7%BB%93%5D%20%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F.md)
 - [[in process] Webpack4 学习记录](../posts/%5Bin%20process%5D%20Webpack4%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md)
 - [[javascript] JavaScript](../posts/%5Bjavascript%5D%20JavaScript.md)
 - [[vue] Vue 3](../posts/%5Bvue%5D%20Vue%203.md)
