@@ -1,5 +1,7 @@
 # Windows Terminal 配置 [#47](https://github.com/vhxubo/blog/issues/47)
 
+[配置](https://github.com/vhxubo/blog/issues?q=label:配置)
+
 Windows Terminal更新了配置文件方案，相比之前的json文件方便多了，正好电脑上次配置的没了，这次重新配置一下
 
 代码补全还是需要安装**PSReadLine**

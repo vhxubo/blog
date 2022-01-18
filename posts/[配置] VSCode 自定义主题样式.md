@@ -1,5 +1,7 @@
 # VSCode 自定义主题样式 [#51](https://github.com/vhxubo/blog/issues/51)
 
+[配置](https://github.com/vhxubo/blog/issues?q=label:配置)
+
 在别的视频中看到别人的`className`显示很好看，于是想尽方法去寻找那个字体
 
 最后，当我放弃的时候，发现[CSS Modules and React | CSS-Tricks](https://css-tricks.com/css-modules-part-3-react/)中使用到该字体：**Operator Mono Ssm**，但是对于我想要的那个好看的样式，需要在 italic 模式下
