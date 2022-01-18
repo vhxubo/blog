@@ -1,5 +1,7 @@
 # manjaro 配置 [#6](https://github.com/vhxubo/blog/issues/6)
 
+[配置](https://github.com/vhxubo/blog/issues?q=label:配置)
+
 ## 双系统时间同步
 
 - [如何解决 Windows 和 Manjaro 双系统时间差8小时的问题_哈哈餐馆的博客-CSDN博客_manjaro 时区](https://blog.csdn.net/aaazz47/article/details/78696899)
