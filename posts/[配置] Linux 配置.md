@@ -1,5 +1,7 @@
 # Linux 配置 [#61](https://github.com/vhxubo/blog/issues/61)
 
+[配置](https://github.com/vhxubo/blog/issues?q=label:配置)
+
 ## 底端配置
 
 - 安装 zsh

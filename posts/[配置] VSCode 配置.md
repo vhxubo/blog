@@ -1,5 +1,7 @@
 # VSCode 配置 [#54](https://github.com/vhxubo/blog/issues/54)
 
+[配置](https://github.com/vhxubo/blog/issues?q=label:配置)
+
 ## 保存时死循环
 
 - 关闭 `Editor: Format On Save`
