@@ -1,5 +1,7 @@
 # Vue2 踩过的坑 [#41](https://github.com/vhxubo/blog/issues/41)
 
+[Vue](https://github.com/vhxubo/blog/issues?q=label:Vue)
+
 - data不能使用()=>
 - 响应式不能监听到数组的变动，需要使用`vm.$set`对数组数据进行更新
 - 在刷新页面时可以使用`location.reload()`对页面进行强制刷新

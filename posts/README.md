@@ -24,7 +24,7 @@
 - [jQuery](../posts/jQuery.md)
 - [curl](../posts/curl.md)
 - [[in process] Prettier](../posts/%5Bin%20process%5D%20Prettier.md)
-- [Vue2 踩过的坑](../posts/Vue2%20%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md)
+- [[Vue] Vue2 踩过的坑](../posts/%5BVue%5D%20Vue2%20%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91.md)
 - [[in process] Eleventy (11ty)](../posts/%5Bin%20process%5D%20Eleventy%20(11ty).md)
 - [[in process] BFC是个什么东西？](../posts/%5Bin%20process%5D%20BFC%E6%98%AF%E4%B8%AA%E4%BB%80%E4%B9%88%E4%B8%9C%E8%A5%BF%EF%BC%9F.md)
 - [[Vim] VSCode + Neo Vim](../posts/%5BVim%5D%20VSCode%20+%20Neo%20Vim.md)
