@@ -1,6 +1,6 @@
 # Day.js [#21](https://github.com/vhxubo/blog/issues/21)
 
-[javascript](https://github.com/vhxubo/blog/issues?q=label:javascript)
+[JavaScript](https://github.com/vhxubo/blog/issues?q=label:JavaScript)
 
 > Moment.js 的 2kB 轻量化方案，拥有同样强大的 API
 

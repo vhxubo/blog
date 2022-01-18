@@ -1,6 +1,6 @@
 # VSCodeVim 配置 [#55](https://github.com/vhxubo/blog/issues/55)
 
-[vim](https://github.com/vhxubo/blog/issues?q=label:vim)
+[Vim](https://github.com/vhxubo/blog/issues?q=label:Vim)
 
 ## 配置输入法切换
 

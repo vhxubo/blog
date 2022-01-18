@@ -1,6 +1,6 @@
 # vue-echarts 解决方案 [#1](https://github.com/vhxubo/blog/issues/1)
 
-[vue](https://github.com/vhxubo/blog/issues?q=label:vue)
+[Vue](https://github.com/vhxubo/blog/issues?q=label:Vue)
 
 ## 图表自适应
 

@@ -1,6 +1,6 @@
 # Vue 3 [#30](https://github.com/vhxubo/blog/issues/30)
 
-[vue](https://github.com/vhxubo/blog/issues?q=label:vue)
+[Vue](https://github.com/vhxubo/blog/issues?q=label:Vue)
 
 ## Vue Devtools 不支持 Vue3 Vuex
 

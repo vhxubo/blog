@@ -1,6 +1,6 @@
 # 监听滚动事件 [#14](https://github.com/vhxubo/blog/issues/14)
 
-[javascript](https://github.com/vhxubo/blog/issues?q=label:javascript)
+[JavaScript](https://github.com/vhxubo/blog/issues?q=label:JavaScript)
 
 ## 监听滚动事件
 

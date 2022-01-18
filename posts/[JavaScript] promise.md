@@ -1,6 +1,6 @@
 # promise [#15](https://github.com/vhxubo/blog/issues/15)
 
-[javascript](https://github.com/vhxubo/blog/issues?q=label:javascript)
+[JavaScript](https://github.com/vhxubo/blog/issues?q=label:JavaScript)
 
 ## promise
 - 订阅模式

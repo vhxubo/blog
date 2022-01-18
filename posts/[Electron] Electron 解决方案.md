@@ -1,6 +1,6 @@
 # Electron 解决方案 [#2](https://github.com/vhxubo/blog/issues/2)
 
-[electron](https://github.com/vhxubo/blog/issues?q=label:electron)
+[Electron](https://github.com/vhxubo/blog/issues?q=label:Electron)
 
 ## 安装缓慢
 

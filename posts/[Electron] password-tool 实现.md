@@ -1,6 +1,6 @@
 # password-tool 实现 [#3](https://github.com/vhxubo/blog/issues/3)
 
-[electron](https://github.com/vhxubo/blog/issues?q=label:electron)
+[Electron](https://github.com/vhxubo/blog/issues?q=label:Electron)
 
 > https://github.com/vhxubo/password-tool
 

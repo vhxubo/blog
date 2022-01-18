@@ -1,6 +1,6 @@
 # Event Loop [#16](https://github.com/vhxubo/blog/issues/16)
 
-[javascript](https://github.com/vhxubo/blog/issues?q=label:javascript)
+[JavaScript](https://github.com/vhxubo/blog/issues?q=label:JavaScript)
 
 ### 参考链接
 - [Tasks, microtasks, queues and schedules - JakeArchibald.com](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
