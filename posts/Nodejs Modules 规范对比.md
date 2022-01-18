@@ -9,21 +9,44 @@
 
 还有 UMD 和 AMD
 
+**默认导出不能和后面的 {} 类型导出在一起, 否则会被 {} 导出覆盖**
+
 ## 配对使用
 
-## `const xx = require()`
+## `const xx = require()` /  `const { xx } = require()`
 
 - `module.exports`
 - `exports`
 
-## `import { xx } from ''`
+```js
+// 默认导出
+module.exports = var/function
+// 导出一个
+module.exports.a = a
+// 导出多个, 注意在 ES5 中没有结构
+module.exports = {
+  a: a,
+  b: b
+}
+```
+
+## `import xx from ''` / `import { xx } from ''`
 
 - `export`
 - `export default`
 
+```js
+// 默认导出
+export default var/function
+// 导出一个
+export a
+// 导出多个
+export { a, b }
+```
 
 ## 参考
 
+- [Module 的语法 - ECMAScript 6入门](https://es6.ruanyifeng.com/#docs/module)
 - [JS模块规范：AMD、UMD、CMD、commonJS、ES6 module - SegmentFault 思否](https://segmentfault.com/a/1190000012419990)
 - [What are CJS, AMD, UMD, and ESM in Javascript? - DEV Community 👩‍💻👨‍💻](https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm)
 - [Node Modules at War: Why CommonJS and ES Modules Can’t Get Along | by Dan Fabulich | Code Red](https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-get-along-9617135eeca1)
