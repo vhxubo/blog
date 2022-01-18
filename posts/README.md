@@ -56,7 +56,7 @@
 - [Golang](../posts/Golang.md)
 - [FFmpeg](../posts/FFmpeg.md)
 - [manjaro 配置](../posts/manjaro%20%E9%85%8D%E7%BD%AE.md)
-- [Windows  究极配置](../posts/Windows%20%20%E7%A9%B6%E6%9E%81%E9%85%8D%E7%BD%AE.md)
+- [[配置] Windows  究极配置](../posts/%5B%E9%85%8D%E7%BD%AE%5D%20Windows%20%20%E7%A9%B6%E6%9E%81%E9%85%8D%E7%BD%AE.md)
 - [Tool](../posts/Tool.md)
 - [[Electron] password-tool 实现](../posts/%5BElectron%5D%20password-tool%20%E5%AE%9E%E7%8E%B0.md)
 - [[Electron] Electron 解决方案](../posts/%5BElectron%5D%20Electron%20%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)

@@ -1,5 +1,7 @@
 # Windows  究极配置 [#5](https://github.com/vhxubo/blog/issues/5)
 
+[配置](https://github.com/vhxubo/blog/issues?q=label:配置)
+
 ## 快速设置小鹤双拼
 
 > https://ifttl.com/add-flypy-to-win10-microsoft-pinyin-and-other-configuration/
