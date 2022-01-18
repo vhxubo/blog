@@ -3,7 +3,7 @@
 - [[微信小程序] template vs Component](../posts/%5B%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%5D%20template%20vs%20Component.md)
 - [Less CSS 预处理](../posts/Less%20CSS%20%E9%A2%84%E5%A4%84%E7%90%86.md)
 - [[Vue] Vue 2](../posts/%5BVue%5D%20Vue%202.md)
-- [[documentation] NeoVim && Vim 配置](../posts/%5Bdocumentation%5D%20NeoVim%20&&%20Vim%20%E9%85%8D%E7%BD%AE.md)
+- [[Vim] NeoVim && Vim 配置](../posts/%5BVim%5D%20NeoVim%20&&%20Vim%20%E9%85%8D%E7%BD%AE.md)
 - [Linux 配置](../posts/Linux%20%E9%85%8D%E7%BD%AE.md)
 - [OpenWrt](../posts/OpenWrt.md)
 - [Spring Boot 学习](../posts/Spring%20Boot%20%E5%AD%A6%E4%B9%A0.md)
