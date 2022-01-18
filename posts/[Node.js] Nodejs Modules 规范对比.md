@@ -1,5 +1,7 @@
 # Nodejs Modules 规范对比 [#50](https://github.com/vhxubo/blog/issues/50)
 
+[Node.js](https://github.com/vhxubo/blog/issues?q=label:Node.js)
+
 这个问题困扰了我好长时间，在`module.exports` `exports` `export`中迷惑不已
 
 只有在`type="module"`时才可以使用到`export`和`import`
