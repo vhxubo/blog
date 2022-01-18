@@ -17,7 +17,7 @@
 - [VSCode 自定义主题样式](../posts/VSCode%20%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F.md)
 - [[Node.js] Nodejs Modules 规范对比](../posts/%5BNode.js%5D%20Nodejs%20Modules%20%E8%A7%84%E8%8C%83%E5%AF%B9%E6%AF%94.md)
 - [[React] Reactjs ♥ 基础 Hooks](../posts/%5BReact%5D%20Reactjs%20%E2%99%A5%20%E5%9F%BA%E7%A1%80%20Hooks.md)
-- [前端小记](../posts/%E5%89%8D%E7%AB%AF%E5%B0%8F%E8%AE%B0.md)
+- [[总结] 前端小记](../posts/%5B%E6%80%BB%E7%BB%93%5D%20%E5%89%8D%E7%AB%AF%E5%B0%8F%E8%AE%B0.md)
 - [Windows Terminal 配置](../posts/Windows%20Terminal%20%E9%85%8D%E7%BD%AE.md)
 - [whistle](../posts/whistle.md)
 - [[in process] Vue3 vue-cli 项目起手式](../posts/%5Bin%20process%5D%20Vue3%20vue-cli%20%E9%A1%B9%E7%9B%AE%E8%B5%B7%E6%89%8B%E5%BC%8F.md)
