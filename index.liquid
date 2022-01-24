@@ -22,9 +22,9 @@ pagination:
   {% endfor %}
 </ul>
 <nav class="page__nav">
-  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"
+  {% if pagination.href.previous %}<a href="{{ pagination.href.previous | url }}"
     >&#8592;上一页</a
-  >{% endif %} {% if pagination.href.next %}<a href="{{ pagination.href.next }}"
+  >{% endif %} {% if pagination.href.next %}<a href="{{ pagination.href.next | url }}"
     >下一页&#8594;</a
   >{% endif %}
 </nav>
