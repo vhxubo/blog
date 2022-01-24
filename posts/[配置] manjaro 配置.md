@@ -28,13 +28,13 @@ The way to do this is different on Arch based distributions than other Linux dis
 Check for an already existing inotify config file
 (recent versions of Manjaro include one)
 
-```sh
+```shell
 ls /etc/sysctl.d/*-max_user_watches.conf
 ```
 
 #### a) If no output
 
-```sh
+```shell
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
 ```
 
@@ -42,14 +42,14 @@ echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-wat
 
 _(in the rare case where it outputs multiple files, continue using the **last** one in the list)_
 
-```sh
+```shell
 # replace `/etc/sysctl.d/50-max-user-watches.conf` with the file returned from the previous `ls` command
 echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/50-max_user_watches.conf && sudo sysctl --system
 ```
 
 ### Check it's working
 
-```sh
+```shell
 cat /proc/sys/fs/inotify/max_user_watches
 ```
 
