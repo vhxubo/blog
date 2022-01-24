@@ -16,6 +16,6 @@ $ sudo vim /etc/hosts
 
 填入
 
-```.
+```
 151.101.76.133 raw.githubusercontent.com
 ```
