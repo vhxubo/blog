@@ -36,7 +36,7 @@
 ### 实现对任意父子组件数据的双向绑定
 
 子组件
-```vue
+```html
 <template>
   {{ jsonRef }}
   <button @click="addJson">add</button>
@@ -65,7 +65,7 @@ export default {
 ```
 
 父组件
-```vue
+```html
 
 <template>
   <div class="home">This is the home page</div>
