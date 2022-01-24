@@ -13,6 +13,7 @@ module.exports = async () => {
       repo: repository[1],
       per_page: 100,
       state: "closed",
+      creator: repository[0]
     }
   );
   console.log(issues);
