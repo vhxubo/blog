@@ -1,0 +1,27 @@
+---
+pagination:
+  data: posts
+  size: 1
+  alias: post
+  addAllPagesToCollections: true
+layout: base
+tags: post
+permalink: "/post/{{ post.title }}/"
+eleventyComputed:
+  title: "{{post.title}}"
+  date: "{{post.created_at}}"
+templateEngineOverride: md, liquid
+---
+
+## {{ post.title }}
+
+<div class="time">
+  <time datetime="{{ post.created_at }}"
+    >创建时间: {{ post.created_at | date: "%Y-%m-%d %H:%M" }}</time
+  >
+  <time datetime="{{ post.updated_at }}"
+    >更新时间: {{ post.updated_at | date: "%Y-%m-%d %H:%M" }}</time
+  >
+</div>
+
+{{ post.body }}

@@ -1,0 +1,30 @@
+---
+layout: base
+title: vhxubo's blog
+pagination:
+  data: collections.post
+  size: 10
+  alias: posts
+---
+
+<ul>
+  {% for post in posts %}
+  <li>
+    <div class="post">
+      <div class="post__date">
+        {{ post.data.date | date: "%Y-%m-%d" }}
+      </div>
+      <div class="post__title">
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+<nav class="page__nav">
+  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"
+    >&#8592;上一页</a
+  >{% endif %} {% if pagination.href.next %}<a href="{{ pagination.href.next }}"
+    >下一页&#8594;</a
+  >{% endif %}
+</nav>

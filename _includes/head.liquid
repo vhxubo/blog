@@ -1,0 +1,9 @@
+{% capture css %} {% include 'styles.css' %} {% endcapture %} {% capture
+prism-css %} {% include 'prism-coldark-cold.css' %} {% endcapture %}
+<head>
+  <style>
+    {{ css | cssmin }}
+    {{ prism-css | cssmin }}
+  </style>
+  <title>{{ title }}</title>
+</head>
