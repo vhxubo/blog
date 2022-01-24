@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+  <!-- [通过预加载 web 字体提高加载速度](https://web.dev/codelab-preload-web-fonts/) -->
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff"
+    as="font"
+    type="font/woff"
+    crossorigin
+  />
+  <style>
+    :root{--primary-color:#0052d9;--second-color:#4787f0;--max-width:1080px;--base-gray:#8b8b8b}@font-face{font-family:HarmonyOS_Sans_SC_Regular;font-style:normal;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2") format("woff2"),url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff") format("woff")}body{margin:0;font-family:PingFang SC,HarmonyOS_Sans_SC_Regular,Helvetica Neue,Microsoft YaHei,sans-serif!important;font-weight:400}*{box-sizing:border-box}ul{list-style:none;padding-inline-start:0}a{color:var(--primary-color);text-decoration:none}a:hover{text-decoration:underline;color:var(--second-color)}code{background-color:#d4e3fc;padding:.2em .4em;border-radius:6px}time{color:var(--base-gray);font-size:small;user-select:none}.header,main{margin:0 auto;max-width:var(--max-width);padding:0 32px}.header{display:flex;justify-content:space-between;align-items:center;height:44px;user-select:none}.header a{color:#333}.header__title{font-size:larger}main{margin-bottom:32px}.post{margin-bottom:18px}.post__title{font-size:larger;font-weight:700}.post__date{color:var(--base-gray);font-size:small}
+    code[class*=language-],pre[class*=language-]{color:#111b27;background:0 0;font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#8da1b9}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#8da1b9}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#e3eaf2}:not(pre)>code[class*=language-]{padding:.1em .3em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#3c526d}.token.punctuation{color:#111b27}.token.delimiter.important,.token.selector .parent,.token.tag,.token.tag .token.punctuation{color:#006d6d}.token.attr-name,.token.boolean,.token.boolean.important,.token.constant,.token.number,.token.selector .token.attribute{color:#755f00}.token.class-name,.token.key,.token.parameter,.token.property,.token.property-access,.token.variable{color:#005a8e}.token.attr-value,.token.color,.token.inserted,.token.selector .token.value,.token.string,.token.string .token.url-link{color:#116b00}.token.builtin,.token.keyword-array,.token.package,.token.regex{color:#af00af}.token.function,.token.selector .token.class,.token.selector .token.id{color:#7c00aa}.token.atrule .token.rule,.token.combinator,.token.keyword,.token.operator,.token.pseudo-class,.token.pseudo-element,.token.selector,.token.unit{color:#a04900}.token.deleted,.token.important{color:#c22f2e}.token.keyword-this,.token.this{color:#005a8e}.token.bold,.token.important,.token.keyword-this,.token.this{font-weight:700}.token.delimiter.important{font-weight:inherit}.token.italic{font-style:italic}.token.entity{cursor:help}.language-markdown .token.title,.language-markdown .token.title .token.punctuation{color:#005a8e;font-weight:700}.language-markdown .token.blockquote.punctuation{color:#af00af}.language-markdown .token.code{color:#006d6d}.language-markdown .token.hr.punctuation{color:#005a8e}.language-markdown .token.url>.token.content{color:#116b00}.language-markdown .token.url-link{color:#755f00}.language-markdown .token.list.punctuation{color:#af00af}.language-markdown .token.table-header{color:#111b27}.language-json .token.operator{color:#111b27}.language-scss .token.variable{color:#006d6d}.token.token.cr:before,.token.token.lf:before,.token.token.space:before,.token.token.tab:not(:empty):before{color:#3c526d}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button{color:#e3eaf2;background:#005a8e}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover{color:#e3eaf2;background:#005a8eda;text-decoration:none}div.code-toolbar>.toolbar.toolbar>.toolbar-item>span,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover{color:#e3eaf2;background:#3c526d}.line-highlight.line-highlight{background:#8da1b92f;background:linear-gradient(to right,#8da1b92f 70%,#8da1b925)}.line-highlight.line-highlight:before,.line-highlight.line-highlight[data-end]:after{background-color:#3c526d;color:#e3eaf2;box-shadow:0 1px #8da1b9}pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before{background-color:#3c526d1f}.line-numbers.line-numbers .line-numbers-rows{border-right:1px solid #8da1b97a;background:#d0dae77a}.line-numbers .line-numbers-rows>span:before{color:#3c526dda}.rainbow-braces .token.token.punctuation.brace-level-1,.rainbow-braces .token.token.punctuation.brace-level-5,.rainbow-braces .token.token.punctuation.brace-level-9{color:#755f00}.rainbow-braces .token.token.punctuation.brace-level-10,.rainbow-braces .token.token.punctuation.brace-level-2,.rainbow-braces .token.token.punctuation.brace-level-6{color:#af00af}.rainbow-braces .token.token.punctuation.brace-level-11,.rainbow-braces .token.token.punctuation.brace-level-3,.rainbow-braces .token.token.punctuation.brace-level-7{color:#005a8e}.rainbow-braces .token.token.punctuation.brace-level-12,.rainbow-braces .token.token.punctuation.brace-level-4,.rainbow-braces .token.token.punctuation.brace-level-8{color:#7c00aa}pre.diff-highlight>code .token.token.deleted:not(.prefix),pre>code.diff-highlight .token.token.deleted:not(.prefix){background-color:#c22f2e1f}pre.diff-highlight>code .token.token.inserted:not(.prefix),pre>code.diff-highlight .token.token.inserted:not(.prefix){background-color:#116b001f}.command-line .command-line-prompt{border-right:1px solid #8da1b97a}.command-line .command-line-prompt>span:before{color:#3c526dda}
+  </style>
+  <title>Windows  究极配置</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header__title">
+    <a href="/"> vhxubo's blog </a>
+  </div>
+
+  <div><a href="/about">关于</a></div>
+</header>
+
+    <main>
+      <h2>Windows  究极配置</h2>
+<div class="time">
+  <time datetime="2020-11-09T01:20:26Z"
+    >创建时间: 2020-11-09 01:20</time
+  >
+  <time datetime="2022-01-18T02:43:05Z"
+    >更新时间: 2022-01-18 02:43</time
+  >
+</div>
+<h2>快速设置小鹤双拼</h2>
+<blockquote>
+<p>https://ifttl.com/add-flypy-to-win10-microsoft-pinyin-and-other-configuration/</p>
+</blockquote>
+<p>首先打开注册表，找到这个路径</p>
+<pre><code>计算机\HKEY_CURRENT_USER\Software\Microsoft\InputMethod\Settings\CHS
+</code></pre>
+<p>然后新建一个名为 <code>UserDefinedDoublePinyinScheme0</code> 的字符串值，数值数据为</p>
+<pre><code>小鹤双拼*2*^*iuvdjhcwfg^xmlnpbksqszxkrltvyovt
+</code></pre>
+<h2>设置开机是否开启 Hyper-V</h2>
+<blockquote>
+<p>如果使用 Windows PowerShell，必须使用引号将启动项标识符引起来，例如：“{49916baf-0e08-11db-9af4-000bdbd316a0}”或“{current}” 。<a href="https://docs.microsoft.com/zh-cn/windows-hardware/drivers/devtest/changing-the-friendly-name-of-a-boot-entry">^1</a></p>
+</blockquote>
+<pre><code>bcdedit /copy &quot;{default}&quot; /d &quot;Windows 11 With Off Hyper-V&quot;
+bcdedit /set &quot;{f40847d6-13a4-11ec-a306-00155d9d7c47}&quot; hypervisorlaunchtype Off
+</code></pre>
+<p><code>f40847d6-13a4-11ec-a306-00155d9d7c47</code> 来自上一条命令</p>
+<h2>全局配置</h2>
+<ul>
+<li>修改_文档_和_下载_的目录，右键属性设置并应用</li>
+<li><a href="https://blog.csdn.net/xrinosvip/article/details/81352823">win10的pagefile.sys是什么文件？pagefile.sys文件太大如何移动到D盘中？_xrinosvip的博客-CSDN博客_pagefile.sys</a></li>
+</ul>
+<p>小软件/不方便更新的软件使用 Chocolatey 安装</p>
+<h2>软件</h2>
+<ul>
+<li>
+<p><a href="https://github.com/Fndroid/clash_for_windows_pkg">Fndroid/clash_for_windows_pkg: A Windows/macOS GUI based on Clash</a></p>
+</li>
+<li>
+<p><a href="https://huorong.cn/">火绒安全</a></p>
+</li>
+<li>
+<p><a href="https://www.microsoft.com/zh-cn/edge">Microsoft Edge 浏览器 | Microsoft</a></p>
+</li>
+<li>
+<p><a href="https://chocolatey.org/">Chocolatey Software | Chocolatey - The package manager for Windows</a></p>
+</li>
+<li>
+<p><a href="https://github.com/PowerShell/PowerShell/releases">Releases · PowerShell/PowerShell</a></p>
+</li>
+</ul>
+<h3>Chocolatey</h3>
+<h4>安装</h4>
+<blockquote>
+<p><a href="https://chocolatey.org/install">Chocolatey Software | Installing Chocolatey</a></p>
+</blockquote>
+<pre><code>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+</code></pre>
+<h4>应用</h4>
+<blockquote>
+<p><a href="https://zhuanlan.zhihu.com/p/42441423">[Win]使用Chocolatey管理你的小软件们 - 知乎</a></p>
+</blockquote>
+<pre><code>choco install listary
+# choco install 7zip
+choco install peazip
+choco install treesizefree
+choco install mpv
+choco install git
+choco install internet-download-manager
+choco install autohotkey
+</code></pre>
+<p><a href="https://dns.icoa.cn/tracker/">BT Tracker 服务器地址大全与常用 BT 软件下载地址 Tracker List - DNS.iCoA.CN</a></p>
+<h2>插件</h2>
+<ul>
+<li>
+<p><a href="http://www.tampermonkey.net/">Tampermonkey • Microsoft Edge</a></p>
+<ul>
+<li><a href="https://greasyfork.org/zh-CN/scripts/403081-%E5%A4%8D%E5%88%B6-markdown-%E6%A0%BC%E5%BC%8F%E7%9A%84%E8%B6%85%E9%93%BE%E6%8E%A5%E5%88%B0%E5%89%AA%E8%B4%B4%E6%9D%BF">复制 MarkDown 格式的超链接到剪贴板</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/FelisCatus/SwitchyOmega">FelisCatus/SwitchyOmega: Manage and switch between multiple proxies quickly &amp; easily.</a></p>
+</li>
+<li>
+<p><a href="https://microsoftedge.microsoft.com/addons/detail/%E6%B2%99%E6%8B%89%E6%9F%A5%E8%AF%8D%E8%81%9A%E5%90%88%E8%AF%8D%E5%85%B8%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/idghocbbahafpfhjnfhpbfbmpegphmmp">沙拉查词-聚合词典划词翻译</a></p>
+</li>
+</ul>
+
+    </main>
+  </body>
+</html>

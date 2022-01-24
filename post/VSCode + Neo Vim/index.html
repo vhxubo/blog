@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+  <!-- [通过预加载 web 字体提高加载速度](https://web.dev/codelab-preload-web-fonts/) -->
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff"
+    as="font"
+    type="font/woff"
+    crossorigin
+  />
+  <style>
+    :root{--primary-color:#0052d9;--second-color:#4787f0;--max-width:1080px;--base-gray:#8b8b8b}@font-face{font-family:HarmonyOS_Sans_SC_Regular;font-style:normal;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2") format("woff2"),url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff") format("woff")}body{margin:0;font-family:PingFang SC,HarmonyOS_Sans_SC_Regular,Helvetica Neue,Microsoft YaHei,sans-serif!important;font-weight:400}*{box-sizing:border-box}ul{list-style:none;padding-inline-start:0}a{color:var(--primary-color);text-decoration:none}a:hover{text-decoration:underline;color:var(--second-color)}code{background-color:#d4e3fc;padding:.2em .4em;border-radius:6px}time{color:var(--base-gray);font-size:small;user-select:none}.header,main{margin:0 auto;max-width:var(--max-width);padding:0 32px}.header{display:flex;justify-content:space-between;align-items:center;height:44px;user-select:none}.header a{color:#333}.header__title{font-size:larger}main{margin-bottom:32px}.post{margin-bottom:18px}.post__title{font-size:larger;font-weight:700}.post__date{color:var(--base-gray);font-size:small}
+    code[class*=language-],pre[class*=language-]{color:#111b27;background:0 0;font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#8da1b9}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#8da1b9}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#e3eaf2}:not(pre)>code[class*=language-]{padding:.1em .3em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#3c526d}.token.punctuation{color:#111b27}.token.delimiter.important,.token.selector .parent,.token.tag,.token.tag .token.punctuation{color:#006d6d}.token.attr-name,.token.boolean,.token.boolean.important,.token.constant,.token.number,.token.selector .token.attribute{color:#755f00}.token.class-name,.token.key,.token.parameter,.token.property,.token.property-access,.token.variable{color:#005a8e}.token.attr-value,.token.color,.token.inserted,.token.selector .token.value,.token.string,.token.string .token.url-link{color:#116b00}.token.builtin,.token.keyword-array,.token.package,.token.regex{color:#af00af}.token.function,.token.selector .token.class,.token.selector .token.id{color:#7c00aa}.token.atrule .token.rule,.token.combinator,.token.keyword,.token.operator,.token.pseudo-class,.token.pseudo-element,.token.selector,.token.unit{color:#a04900}.token.deleted,.token.important{color:#c22f2e}.token.keyword-this,.token.this{color:#005a8e}.token.bold,.token.important,.token.keyword-this,.token.this{font-weight:700}.token.delimiter.important{font-weight:inherit}.token.italic{font-style:italic}.token.entity{cursor:help}.language-markdown .token.title,.language-markdown .token.title .token.punctuation{color:#005a8e;font-weight:700}.language-markdown .token.blockquote.punctuation{color:#af00af}.language-markdown .token.code{color:#006d6d}.language-markdown .token.hr.punctuation{color:#005a8e}.language-markdown .token.url>.token.content{color:#116b00}.language-markdown .token.url-link{color:#755f00}.language-markdown .token.list.punctuation{color:#af00af}.language-markdown .token.table-header{color:#111b27}.language-json .token.operator{color:#111b27}.language-scss .token.variable{color:#006d6d}.token.token.cr:before,.token.token.lf:before,.token.token.space:before,.token.token.tab:not(:empty):before{color:#3c526d}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button{color:#e3eaf2;background:#005a8e}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover{color:#e3eaf2;background:#005a8eda;text-decoration:none}div.code-toolbar>.toolbar.toolbar>.toolbar-item>span,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover{color:#e3eaf2;background:#3c526d}.line-highlight.line-highlight{background:#8da1b92f;background:linear-gradient(to right,#8da1b92f 70%,#8da1b925)}.line-highlight.line-highlight:before,.line-highlight.line-highlight[data-end]:after{background-color:#3c526d;color:#e3eaf2;box-shadow:0 1px #8da1b9}pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before{background-color:#3c526d1f}.line-numbers.line-numbers .line-numbers-rows{border-right:1px solid #8da1b97a;background:#d0dae77a}.line-numbers .line-numbers-rows>span:before{color:#3c526dda}.rainbow-braces .token.token.punctuation.brace-level-1,.rainbow-braces .token.token.punctuation.brace-level-5,.rainbow-braces .token.token.punctuation.brace-level-9{color:#755f00}.rainbow-braces .token.token.punctuation.brace-level-10,.rainbow-braces .token.token.punctuation.brace-level-2,.rainbow-braces .token.token.punctuation.brace-level-6{color:#af00af}.rainbow-braces .token.token.punctuation.brace-level-11,.rainbow-braces .token.token.punctuation.brace-level-3,.rainbow-braces .token.token.punctuation.brace-level-7{color:#005a8e}.rainbow-braces .token.token.punctuation.brace-level-12,.rainbow-braces .token.token.punctuation.brace-level-4,.rainbow-braces .token.token.punctuation.brace-level-8{color:#7c00aa}pre.diff-highlight>code .token.token.deleted:not(.prefix),pre>code.diff-highlight .token.token.deleted:not(.prefix){background-color:#c22f2e1f}pre.diff-highlight>code .token.token.inserted:not(.prefix),pre>code.diff-highlight .token.token.inserted:not(.prefix){background-color:#116b001f}.command-line .command-line-prompt{border-right:1px solid #8da1b97a}.command-line .command-line-prompt>span:before{color:#3c526dda}
+  </style>
+  <title>VSCode + Neo Vim</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header__title">
+    <a href="/"> vhxubo's blog </a>
+  </div>
+
+  <div><a href="/about">关于</a></div>
+</header>
+
+    <main>
+      <h2>VSCode + Neo Vim</h2>
+<div class="time">
+  <time datetime="2021-04-13T14:42:59Z"
+    >创建时间: 2021-04-13 14:42</time
+  >
+  <time datetime="2022-01-17T07:45:48Z"
+    >更新时间: 2022-01-17 07:45</time
+  >
+</div>
+<p>最开始的时候接触到vim，学习了好长时间，改了键位等等，但是最后还是死在了对vim的配置上面。</p>
+<p>后来在VSCode里面使用vim键位，用了一段时间之后，发现打开文件的速度也太慢了，就放弃了vim。</p>
+<p>想着不如直接学好VSCode自带的快捷键好了，于是乎开始深入学习VSCode，参照极客学院的VSCode教程。</p>
+<p>直到现在，换上了VSCode的Neo Vim插件<a href="https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim">Neo Vim - Visual Studio Marketplace</a>，打开速度可以接受，操作方法在Insert模式下与VSCode相互兼容，是一个很不错的选择。</p>
+<h1>init.vim</h1>
+<blockquote>
+<p>updatetime: 2021年7月9日
+path: C:\Users\vhxubo\AppData\Local\nvim\init.vim</p>
+</blockquote>
+<pre><code>&quot; 配置插件
+call plug#begin('~/AppData/Local/nvim/plugged')
+
+Plug 'tpope/vim-surround'
+Plug 'asvetliakov/vim-easymotion'
+Plug 'vim-scripts/argtextobj.vim'
+
+call plug#end()
+
+&quot; 配置输入法切换的能力
+autocmd InsertLeave * :silent :!C:\\tools\\im-select.exe 1033 &amp;&amp; C:\\tools\\im-select.exe 2052
+
+&quot; 公用剪贴板
+set clipboard^=unnamed,unnamedplus
+
+&quot; 配置leader
+let mapleader = &quot;\&lt;Space&gt;&quot;
+
+&quot; 取消双leader
+&quot; map &lt;Leader&gt; &lt;Plug&gt;(easymotion-prefix)
+
+&quot; 配置快速修复
+nnoremap &lt;Leader&gt;. &lt;Cmd&gt;call VSCodeNotify('editor.action.quickFix')&lt;CR&gt;
+
+&quot; VSCode侧边栏
+nnoremap &lt;Leader&gt;b &lt;Cmd&gt;call VSCodeNotify('workbench.action.toggleSidebarVisibility')&lt;CR&gt;
+
+&quot; 复制后高亮
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank()
+augroup END
+</code></pre>
+<h2>配置<code>Ctrl+S</code>保存文件并退出insert模式</h2>
+<ul>
+<li>安装VSCode插件: <a href="https://marketplace.visualstudio.com/items?itemName=geddski.macros">macros - Visual Studio Marketplace</a></li>
+<li>添加配置</li>
+</ul>
+<pre class="language-json"><code class="language-json">  <span class="token property">"macros"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"saveAndEscapeNeovim"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>      <span class="token string">"workbench.action.files.save"</span><span class="token punctuation">,</span><br>      <span class="token string">"vscode-neovim.escape"</span><br>    <span class="token punctuation">]</span><br>  <span class="token punctuation">}</span></code></pre>
+<ul>
+<li>添加键映射</li>
+</ul>
+<pre class="language-json"><code class="language-json">  <span class="token punctuation">{</span><br>    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+s"</span><span class="token punctuation">,</span><br>    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"macros.saveAndEscapeNeovim"</span><span class="token punctuation">,</span><br>    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus &amp;&amp; neovim.mode == insert"</span><br>  <span class="token punctuation">}</span></code></pre>
+<ul>
+<li><a href="https://stackoverflow.com/questions/49177014/how-to-bind-one-key-to-multiple-commands-in-vscode">visual studio code - How to bind one key to multiple commands in VSCode - Stack Overflow</a></li>
+<li><a href="https://github.com/asvetliakov/vscode-neovim/issues/74">odd default <Esc> key binding · Issue #74 · asvetliakov/vscode-neovim</a></li>
+<li><a href="https://www.thinbug.com/q/49050087">在VSCode中，在保存时退出Vim插入模式 - Thinbug</a></li>
+</ul>
+<h2>列选择</h2>
+<p><code>CTRL + V</code> 列选择</p>
+<ul>
+<li><a href="https://www.cnblogs.com/xiaowant/articles/1992923.html">vim的列编辑操作 - 小望 - 博客园</a></li>
+<li><a href="https://my.oschina.net/freeblues/blog/689397">Vim 列编辑功能详细讲解 - FreeBlues的个人空间 - OSCHINA - 中文开源技术交流社区</a></li>
+</ul>
+<h2>替换一个文本（从寄存器里面读）</h2>
+<blockquote>
+<p><a href="https://harttle.land/2016/07/25/vim-registers.html#header-2">Vim 寄存器完全手册 | Harttle Land</a></p>
+</blockquote>
+<pre><code>y yaw
+daw
+&quot;0p
+</code></pre>
+<h2>取消搜索之后的高亮</h2>
+<blockquote>
+<p><a href="https://blog.csdn.net/k7arm/article/details/77370181">在vim中取消搜索的高亮_What the Fuck-CSDN博客_vim取消搜索</a></p>
+</blockquote>
+<pre><code>:nohlsearch
+:noh
+</code></pre>
+<h2>配置语言切换能力</h2>
+<ul>
+<li>将win10输入法设置为旧版模式</li>
+<li>安装英文语言</li>
+<li>下载im-select，放在<code>C:\tools</code>目录下</li>
+<li><code>C:\Users\vhxubo\AppData\Local\nvim\init.vim</code>添加如下配置</li>
+</ul>
+<pre><code>autocmd InsertLeave * :silent :!C:\\tools\\im-select.exe 1033 &amp;&amp; C:\\tools\\im-select.exe 2052
+</code></pre>
+<h2>配置剪贴板</h2>
+<blockquote>
+<p><a href="https://www.reddit.com/r/neovim/comments/cegt9j/copy_paste_not_working_in_neovim/">Copy paste not working in neovim : neovim</a></p>
+</blockquote>
+<pre><code>set clipboard^=unnamed,unnamedplus
+</code></pre>
+<h2>代码折叠方案</h2>
+<p>使用VSCode的折叠快捷键，配合<code>gj</code> <code>gk</code>替代jk防止展开
+<code>Ctrl + Shift + [</code> 折叠代码
+<code>Ctrl + Shift + ]</code> 展开代码</p>
+<h2>配置<code>vim-easymotion</code></h2>
+<ul>
+<li>vim-easymotion默认为双leader，取消了比较方便</li>
+</ul>
+<pre><code>&quot; 配置leader为空格
+let mapleader = &quot;\&lt;Space&gt;&quot;
+
+&quot; 取消双leader
+map &lt;Leader&gt; &lt;Plug&gt;(easymotion-prefix)
+</code></pre>
+<p><code>&lt;leader&gt;-fw</code> 寻找w
+<code>&lt;leader&gt;-w</code> 对文本增加字符跳转前缀</p>
+<pre><code>Default Mapping      | Details
+---------------------|----------------------------------------------
+&lt;Leader&gt;f{char}      | Find {char} to the right. See |f|.
+&lt;Leader&gt;F{char}      | Find {char} to the left. See |F|.
+&lt;Leader&gt;t{char}      | Till before the {char} to the right. See |t|.
+&lt;Leader&gt;T{char}      | Till after the {char} to the left. See |T|.
+&lt;Leader&gt;w            | Beginning of word forward. See |w|.
+&lt;Leader&gt;W            | Beginning of WORD forward. See |W|.
+&lt;Leader&gt;b            | Beginning of word backward. See |b|.
+&lt;Leader&gt;B            | Beginning of WORD backward. See |B|.
+&lt;Leader&gt;e            | End of word forward. See |e|.
+&lt;Leader&gt;E            | End of WORD forward. See |E|.
+&lt;Leader&gt;ge           | End of word backward. See |ge|.
+&lt;Leader&gt;gE           | End of WORD backward. See |gE|.
+&lt;Leader&gt;j            | Line downward. See |j|.
+&lt;Leader&gt;k            | Line upward. See |k|.
+&lt;Leader&gt;n            | Jump to latest &quot;/&quot; or &quot;?&quot; forward. See |n|.
+&lt;Leader&gt;N            | Jump to latest &quot;/&quot; or &quot;?&quot; backward. See |N|.
+&lt;Leader&gt;s            | Find(Search) {char} forward and backward.
+                     | See |f| and |F|.
+</code></pre>
+<h2>Neo Vim</h2>
+<ul>
+<li>切换大小写: <code>gu</code>小写</li>
+<li><code>gU</code> 大写</li>
+</ul>
+<pre><code>The gu, gU, and ~ are case operators.
+
+To lowercase, uppercase, or toggle-case:
+
+- the whole line: guu, gUU, g~~
+- a word: guw, gUw, g~w
+- a word object: guiw, gUiw, g~iw
+- the character under cursor: vu, vU, ~
+</code></pre>
+<ul>
+<li>替换文本 <code>:s/test/boo/g</code> 替换此行中的test为boo</li>
+<li><code>:%s/test/bool/g</code> 替换所有行的</li>
+<li><code>:5,12s/foo/bar/g</code> 替换5到12行</li>
+<li><a href="https://vim.fandom.com/wiki/Search_and_replace">Search and replace | Vim Tips Wiki | Fandom</a></li>
+<li><code>&lt;C-p&gt;</code> 在代码补全窗口下等同于 <code>Up</code></li>
+<li><code>&lt;C-n&gt;</code> 在代码补全窗口下等同于 <code>Down</code></li>
+<li>删除<code>d</code> <code>dd</code> <code>dnw</code></li>
+<li>复制<code>y</code> <code>yy</code> <code>ynw</code></li>
+<li>修改 <code>s</code> <code>S</code>修改整行</li>
+<li>撤回 <code>u</code> <code>U</code></li>
+<li>重做上一个操作 <code>ctrl + r</code></li>
+<li>重复 <code>.</code></li>
+<li>切换tab：<code>gt</code>向后 <code>gT</code>向前</li>
+<li>查看定义：<code>gh</code></li>
+<li>粘贴<code>p</code> <code>P</code></li>
+<li>添加新行 <code>o</code> <code>O</code></li>
+<li>全选<code>gg -&gt; v -&gt; G</code></li>
+<li>格式化代码<code>=</code> <code>==</code></li>
+<li>多行操作<code>V -&gt; mi/ma</code> 可以进行多行注释</li>
+<li>向上翻页  <code>Ctrl+f</code> <code>Ctrl+e</code></li>
+<li>向下翻页 <code>Ctrl+b</code> <code>Ctrl+y</code></li>
+<li>替换模式 <code>r</code> 替换一个词替换完之后立马恢复 <code>R</code> 替换多个词不自动返回</li>
+<li>删除并插入 <code>s</code> 修改几个 <code>S</code> 修改整行</li>
+<li>下一个单词 <code>w</code> <code>W</code></li>
+<li>上一个单词 <code>b</code> <code>B</code></li>
+<li>词尾 <code>e</code> <code>E</code></li>
+<li>当前行居中 <code>zz</code> 置顶<code>zt</code> 置底<code>zb</code></li>
+<li>缩进 <code>&lt;</code> <code>&gt;</code></li>
+<li>屏幕内顶行 <code>H</code> 底行 <code>L</code></li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/17352372/114885759-8ebce280-9e39-11eb-8f40-ad52df169621.png" alt="image"></p>
+<h2>插件</h2>
+<h3>安装</h3>
+<p>在Windows下，nvim的配置文件在<code>~/AppData/Local/nvim/init.vim</code>下，默认不存在，需要自己创建</p>
+<ul>
+<li>安装<a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a></li>
+<li>将<code>plug.vim</code>放到<code>~/AppData/Local/nvim/autoload/</code>下</li>
+<li>修改<code>init.vim</code></li>
+</ul>
+<pre><code>call plug#begin('~/AppData/Local/nvim/plugged')
+
+Plug 'tpope/vim-surround'
+
+call plug#end()
+</code></pre>
+<ul>
+<li>在nvim窗口下，执行<code>:PlugInstall</code></li>
+</ul>
+<h3><a href="https://github.com/tpope/vim-surround">tpope/vim-surround</a></h3>
+<p>删除一个配对符号 (delete a surrounding) <code>ds</code>
+更改一个配对符号 (change a surrounding) <code>cs</code>
+增加一个配对符号 (yank a surrounding) <code>ys</code>
+在新的行增加一个配对符号并进行缩进 <code>yS</code>
+在整行增加一个配对符号 <code>yss</code>
+在整行增加一个配对符号，配对符号单独成行并进行缩进 <code>ySs</code> <code>Yss</code>
+在行选择中，<code>S&lt;div&gt;</code></p>
+<p><img src="https://user-images.githubusercontent.com/17352372/114965057-73d28880-9ea2-11eb-9c7d-78af02113699.gif" alt="691e0c29gy1frp69jz0x6g20ic0ds779"></p>
+<h2>参考</h2>
+<ul>
+<li><a href="https://www.jianshu.com/p/ac739c6ea541">vscode 集成 Neovim - 简书</a></li>
+<li><a href="https://jdhao.github.io/2018/11/16/neovim_configuration_windows-zh/">Windows 10 系统下 Neovim 安装与配置 - jdhao's blog</a></li>
+<li><a href="https://vimjc.com/vim-surround-plugin.html">Vim插件推荐--surround安装方法介绍与使用方法 | vim教程网</a></li>
+<li><a href="https://www.chrisatmachine.com/Neovim/02-vim-general-settings/">Neovim Setting up the basics | Chris@Machine</a></li>
+<li><a href="https://jdhao.github.io/2020/05/22/highlight_yank_region_nvim/">Highlight Yanked Region in Nvim/Vim - jdhao's blog</a></li>
+</ul>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+  <!-- [通过预加载 web 字体提高加载速度](https://web.dev/codelab-preload-web-fonts/) -->
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff"
+    as="font"
+    type="font/woff"
+    crossorigin
+  />
+  <style>
+    :root{--primary-color:#0052d9;--second-color:#4787f0;--max-width:1080px;--base-gray:#8b8b8b}@font-face{font-family:HarmonyOS_Sans_SC_Regular;font-style:normal;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2") format("woff2"),url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff") format("woff")}body{margin:0;font-family:PingFang SC,HarmonyOS_Sans_SC_Regular,Helvetica Neue,Microsoft YaHei,sans-serif!important;font-weight:400}*{box-sizing:border-box}ul{list-style:none;padding-inline-start:0}a{color:var(--primary-color);text-decoration:none}a:hover{text-decoration:underline;color:var(--second-color)}code{background-color:#d4e3fc;padding:.2em .4em;border-radius:6px}time{color:var(--base-gray);font-size:small;user-select:none}.header,main{margin:0 auto;max-width:var(--max-width);padding:0 32px}.header{display:flex;justify-content:space-between;align-items:center;height:44px;user-select:none}.header a{color:#333}.header__title{font-size:larger}main{margin-bottom:32px}.post{margin-bottom:18px}.post__title{font-size:larger;font-weight:700}.post__date{color:var(--base-gray);font-size:small}
+    code[class*=language-],pre[class*=language-]{color:#111b27;background:0 0;font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#8da1b9}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#8da1b9}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#e3eaf2}:not(pre)>code[class*=language-]{padding:.1em .3em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#3c526d}.token.punctuation{color:#111b27}.token.delimiter.important,.token.selector .parent,.token.tag,.token.tag .token.punctuation{color:#006d6d}.token.attr-name,.token.boolean,.token.boolean.important,.token.constant,.token.number,.token.selector .token.attribute{color:#755f00}.token.class-name,.token.key,.token.parameter,.token.property,.token.property-access,.token.variable{color:#005a8e}.token.attr-value,.token.color,.token.inserted,.token.selector .token.value,.token.string,.token.string .token.url-link{color:#116b00}.token.builtin,.token.keyword-array,.token.package,.token.regex{color:#af00af}.token.function,.token.selector .token.class,.token.selector .token.id{color:#7c00aa}.token.atrule .token.rule,.token.combinator,.token.keyword,.token.operator,.token.pseudo-class,.token.pseudo-element,.token.selector,.token.unit{color:#a04900}.token.deleted,.token.important{color:#c22f2e}.token.keyword-this,.token.this{color:#005a8e}.token.bold,.token.important,.token.keyword-this,.token.this{font-weight:700}.token.delimiter.important{font-weight:inherit}.token.italic{font-style:italic}.token.entity{cursor:help}.language-markdown .token.title,.language-markdown .token.title .token.punctuation{color:#005a8e;font-weight:700}.language-markdown .token.blockquote.punctuation{color:#af00af}.language-markdown .token.code{color:#006d6d}.language-markdown .token.hr.punctuation{color:#005a8e}.language-markdown .token.url>.token.content{color:#116b00}.language-markdown .token.url-link{color:#755f00}.language-markdown .token.list.punctuation{color:#af00af}.language-markdown .token.table-header{color:#111b27}.language-json .token.operator{color:#111b27}.language-scss .token.variable{color:#006d6d}.token.token.cr:before,.token.token.lf:before,.token.token.space:before,.token.token.tab:not(:empty):before{color:#3c526d}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button{color:#e3eaf2;background:#005a8e}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover{color:#e3eaf2;background:#005a8eda;text-decoration:none}div.code-toolbar>.toolbar.toolbar>.toolbar-item>span,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover{color:#e3eaf2;background:#3c526d}.line-highlight.line-highlight{background:#8da1b92f;background:linear-gradient(to right,#8da1b92f 70%,#8da1b925)}.line-highlight.line-highlight:before,.line-highlight.line-highlight[data-end]:after{background-color:#3c526d;color:#e3eaf2;box-shadow:0 1px #8da1b9}pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before{background-color:#3c526d1f}.line-numbers.line-numbers .line-numbers-rows{border-right:1px solid #8da1b97a;background:#d0dae77a}.line-numbers .line-numbers-rows>span:before{color:#3c526dda}.rainbow-braces .token.token.punctuation.brace-level-1,.rainbow-braces .token.token.punctuation.brace-level-5,.rainbow-braces .token.token.punctuation.brace-level-9{color:#755f00}.rainbow-braces .token.token.punctuation.brace-level-10,.rainbow-braces .token.token.punctuation.brace-level-2,.rainbow-braces .token.token.punctuation.brace-level-6{color:#af00af}.rainbow-braces .token.token.punctuation.brace-level-11,.rainbow-braces .token.token.punctuation.brace-level-3,.rainbow-braces .token.token.punctuation.brace-level-7{color:#005a8e}.rainbow-braces .token.token.punctuation.brace-level-12,.rainbow-braces .token.token.punctuation.brace-level-4,.rainbow-braces .token.token.punctuation.brace-level-8{color:#7c00aa}pre.diff-highlight>code .token.token.deleted:not(.prefix),pre>code.diff-highlight .token.token.deleted:not(.prefix){background-color:#c22f2e1f}pre.diff-highlight>code .token.token.inserted:not(.prefix),pre>code.diff-highlight .token.token.inserted:not(.prefix){background-color:#116b001f}.command-line .command-line-prompt{border-right:1px solid #8da1b97a}.command-line .command-line-prompt>span:before{color:#3c526dda}
+  </style>
+  <title>Webpack4 学习记录</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header__title">
+    <a href="/"> vhxubo's blog </a>
+  </div>
+
+  <div><a href="/about">关于</a></div>
+</header>
+
+    <main>
+      <h2>Webpack4 学习记录</h2>
+<div class="time">
+  <time datetime="2020-12-28T04:48:53Z"
+    >创建时间: 2020-12-28 04:48</time
+  >
+  <time datetime="2022-01-18T02:45:04Z"
+    >更新时间: 2022-01-18 02:45</time
+  >
+</div>
+<p>Webpack是一个前端打包工具，只能用于采用模块化开发的项目。</p>
+<p>Webpack最主要的就是各种loader和plugin</p>
+<p>v5与v4差别较大，在使用时以官网文档为准。</p>
+<p>对于学习还是需要用到再去学比较好呀，笼统的全学了太难为人了</p>
+<h2>html-webpack-pulgin</h2>
+<h2>css-loader,style-loader</h2>
+<h2>mini-css-extract-plugin</h2>
+<h2>清理dist目录</h2>
+<p>通常比较推荐的做法是，在每次构建前清理 /dist 文件夹，这样只会生成用到的文件。让我们使用 output.clean 配置项实现这个需求。</p>
+<pre class="language-js"><code class="language-js"> <span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br> <span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'html-webpack-plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>   <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>     <span class="token literal-property property">index</span><span class="token operator">:</span> <span class="token string">'./src/index.js'</span><span class="token punctuation">,</span><br>     <span class="token literal-property property">print</span><span class="token operator">:</span> <span class="token string">'./src/print.js'</span><span class="token punctuation">,</span><br>   <span class="token punctuation">}</span><span class="token punctuation">,</span><br>   <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>     <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>       <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'Output Management'</span><span class="token punctuation">,</span><br>     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>   <span class="token punctuation">]</span><span class="token punctuation">,</span><br>   <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>     <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'[name].bundle.js'</span><span class="token punctuation">,</span><br>     <span class="token literal-property property">path</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'dist'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">clean</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  <span class="token comment">//like this</span><br>   <span class="token punctuation">}</span><span class="token punctuation">,</span><br> <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<h2>参考</h2>
+<ul>
+<li><a href="https://juejin.cn/post/6844904094281236487">「吐血整理」再来一打Webpack面试题</a></li>
+<li><a href="https://webpack.docschina.org/">webpack</a></li>
+<li><a href="http://webpack.wuhaolin.cn/">深入浅出 Webpack · 深入浅出 Webpack</a></li>
+<li><a href="https://babeljs.io/setup#installation">Babel · The compiler for next generation JavaScript</a></li>
+<li><a href="https://webpack.docschina.org/guides/output-management/#preparation">管理输出 | webpack 中文文档</a></li>
+<li><a href="https://webpack.docschina.org/guides/asset-modules/">资源模块 | webpack 中文文档</a></li>
+<li><a href="https://segmentfault.com/a/1190000039757986">简析 webpack 的打包优化 - SegmentFault 思否</a></li>
+<li><a href="https://stackoverflow.com/questions/28969861/managing-jquery-plugin-dependency-in-webpack">javascript - Managing jQuery plugin dependency in webpack - Stack Overflow</a></li>
+<li><a href="https://juejin.cn/post/6844903918862860301#heading-1">webpack常用插件，走起~</a></li>
+<li><a href="https://juejin.cn/post/6844903873295941645#heading-4">webpack入门学习笔记05 —— 使用webpack打包编译css文件</a></li>
+<li><a href="https://juejin.cn/post/6844903877167284232">webpack入门学习笔记06 —— 使用babel打包编译js文件</a></li>
+<li><a href="https://juejin.cn/post/6858505844397768718">深入源码理解webpack是如何保证plugins的执行顺序的</a></li>
+</ul>
+
+    </main>
+  </body>
+</html>

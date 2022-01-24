@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+  <!-- [通过预加载 web 字体提高加载速度](https://web.dev/codelab-preload-web-fonts/) -->
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff"
+    as="font"
+    type="font/woff"
+    crossorigin
+  />
+  <style>
+    :root{--primary-color:#0052d9;--second-color:#4787f0;--max-width:1080px;--base-gray:#8b8b8b}@font-face{font-family:HarmonyOS_Sans_SC_Regular;font-style:normal;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2") format("woff2"),url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff") format("woff")}body{margin:0;font-family:PingFang SC,HarmonyOS_Sans_SC_Regular,Helvetica Neue,Microsoft YaHei,sans-serif!important;font-weight:400}*{box-sizing:border-box}ul{list-style:none;padding-inline-start:0}a{color:var(--primary-color);text-decoration:none}a:hover{text-decoration:underline;color:var(--second-color)}code{background-color:#d4e3fc;padding:.2em .4em;border-radius:6px}time{color:var(--base-gray);font-size:small;user-select:none}.header,main{margin:0 auto;max-width:var(--max-width);padding:0 32px}.header{display:flex;justify-content:space-between;align-items:center;height:44px;user-select:none}.header a{color:#333}.header__title{font-size:larger}main{margin-bottom:32px}.post{margin-bottom:18px}.post__title{font-size:larger;font-weight:700}.post__date{color:var(--base-gray);font-size:small}
+    code[class*=language-],pre[class*=language-]{color:#111b27;background:0 0;font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#8da1b9}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#8da1b9}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#e3eaf2}:not(pre)>code[class*=language-]{padding:.1em .3em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#3c526d}.token.punctuation{color:#111b27}.token.delimiter.important,.token.selector .parent,.token.tag,.token.tag .token.punctuation{color:#006d6d}.token.attr-name,.token.boolean,.token.boolean.important,.token.constant,.token.number,.token.selector .token.attribute{color:#755f00}.token.class-name,.token.key,.token.parameter,.token.property,.token.property-access,.token.variable{color:#005a8e}.token.attr-value,.token.color,.token.inserted,.token.selector .token.value,.token.string,.token.string .token.url-link{color:#116b00}.token.builtin,.token.keyword-array,.token.package,.token.regex{color:#af00af}.token.function,.token.selector .token.class,.token.selector .token.id{color:#7c00aa}.token.atrule .token.rule,.token.combinator,.token.keyword,.token.operator,.token.pseudo-class,.token.pseudo-element,.token.selector,.token.unit{color:#a04900}.token.deleted,.token.important{color:#c22f2e}.token.keyword-this,.token.this{color:#005a8e}.token.bold,.token.important,.token.keyword-this,.token.this{font-weight:700}.token.delimiter.important{font-weight:inherit}.token.italic{font-style:italic}.token.entity{cursor:help}.language-markdown .token.title,.language-markdown .token.title .token.punctuation{color:#005a8e;font-weight:700}.language-markdown .token.blockquote.punctuation{color:#af00af}.language-markdown .token.code{color:#006d6d}.language-markdown .token.hr.punctuation{color:#005a8e}.language-markdown .token.url>.token.content{color:#116b00}.language-markdown .token.url-link{color:#755f00}.language-markdown .token.list.punctuation{color:#af00af}.language-markdown .token.table-header{color:#111b27}.language-json .token.operator{color:#111b27}.language-scss .token.variable{color:#006d6d}.token.token.cr:before,.token.token.lf:before,.token.token.space:before,.token.token.tab:not(:empty):before{color:#3c526d}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button{color:#e3eaf2;background:#005a8e}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover{color:#e3eaf2;background:#005a8eda;text-decoration:none}div.code-toolbar>.toolbar.toolbar>.toolbar-item>span,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover{color:#e3eaf2;background:#3c526d}.line-highlight.line-highlight{background:#8da1b92f;background:linear-gradient(to right,#8da1b92f 70%,#8da1b925)}.line-highlight.line-highlight:before,.line-highlight.line-highlight[data-end]:after{background-color:#3c526d;color:#e3eaf2;box-shadow:0 1px #8da1b9}pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before{background-color:#3c526d1f}.line-numbers.line-numbers .line-numbers-rows{border-right:1px solid #8da1b97a;background:#d0dae77a}.line-numbers .line-numbers-rows>span:before{color:#3c526dda}.rainbow-braces .token.token.punctuation.brace-level-1,.rainbow-braces .token.token.punctuation.brace-level-5,.rainbow-braces .token.token.punctuation.brace-level-9{color:#755f00}.rainbow-braces .token.token.punctuation.brace-level-10,.rainbow-braces .token.token.punctuation.brace-level-2,.rainbow-braces .token.token.punctuation.brace-level-6{color:#af00af}.rainbow-braces .token.token.punctuation.brace-level-11,.rainbow-braces .token.token.punctuation.brace-level-3,.rainbow-braces .token.token.punctuation.brace-level-7{color:#005a8e}.rainbow-braces .token.token.punctuation.brace-level-12,.rainbow-braces .token.token.punctuation.brace-level-4,.rainbow-braces .token.token.punctuation.brace-level-8{color:#7c00aa}pre.diff-highlight>code .token.token.deleted:not(.prefix),pre>code.diff-highlight .token.token.deleted:not(.prefix){background-color:#c22f2e1f}pre.diff-highlight>code .token.token.inserted:not(.prefix),pre>code.diff-highlight .token.token.inserted:not(.prefix){background-color:#116b001f}.command-line .command-line-prompt{border-right:1px solid #8da1b97a}.command-line .command-line-prompt>span:before{color:#3c526dda}
+  </style>
+  <title>前端面经</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header__title">
+    <a href="/"> vhxubo's blog </a>
+  </div>
+
+  <div><a href="/about">关于</a></div>
+</header>
+
+    <main>
+      <h2>前端面经</h2>
+<div class="time">
+  <time datetime="2020-12-28T08:25:18Z"
+    >创建时间: 2020-12-28 08:25</time
+  >
+  <time datetime="2022-01-18T02:35:16Z"
+    >更新时间: 2022-01-18 02:35</time
+  >
+</div>
+<h3>郑州深蓝电子有限公司</h3>
+<ul>
+<li>div和span的区别</li>
+<li>盒模型</li>
+<li>闭包</li>
+<li>==和===</li>
+<li>v-if和v-show</li>
+<li>vue响应式</li>
+<li>定位</li>
+<li>悬浮窗口</li>
+<li>.clearfix</li>
+<li>用过的css库</li>
+<li>浮动</li>
+<li>手机页面与</li>
+<li>HTML5 CSS3 的新标签等</li>
+<li>Canvas</li>
+<li>px、rem、em</li>
+<li>vue周期（data初始化的位置）</li>
+<li>vue响应式原理</li>
+<li>vue父子组件通信</li>
+<li>作用域</li>
+<li>手写去重</li>
+<li>手写冒泡</li>
+<li>前端跨域处理</li>
+<li>GET和POST的区别</li>
+<li>vue-router路由处理</li>
+<li>vuex是什么</li>
+<li>CSS选择器的执行顺序</li>
+<li>js基本数据类型</li>
+</ul>
+<h3>科蓝</h3>
+<ul>
+<li>
+<p>闭包的好处</p>
+<pre><code>  闭包的好处： 1.希望一个变量长期保存内存中； 2.避免全局变量污染； 3私有成员的存在。
+  闭包有三个特性：
+  1. 函数嵌套函数；
+  2. 内部函数使用外部函数的参数和变量；
+  3. 参数和变量不会被垃圾回收机制回收。
+</code></pre>
+</li>
+<li>
+<p>SPA优缺点</p>
+<pre><code>  优点：
+  无刷新切换内容，提高用户体验。
+  符合前后端分离的开发思想，通过ajax异步请求数据接口获取数据，后台只需要负责数据，不用考虑渲染。前端使用vue等MVVM框架渲染数据非常合适。
+  减轻服务器压力，展示逻辑和数据渲染在前端完成，服务器任务更明确，压力减轻。
+  后端数据接口可复用，设计JSON格式数据可以在PC、移动端通用。
+  缺点：
+  不利于SEO（搜索引擎优化），应用数据是通过请求接口动态渲染，不利于SEO。
+  首页加载慢，SPA下大部分的资源需要在首页加载，造成首页白屏等问题。
+</code></pre>
+</li>
+<li>
+<p>v-show和v-if的区别</p>
+<pre><code> 在切换 v-if 块时，Vue.js 有一个局部编译/卸载过程，因为 v-if 之中的模板也可能包括数据绑定或子组件。v-if 是真实的条件渲染，因为它会确保条件块在切换当中合适地销毁与重建条件块内的事件监听器和子组件。
+
+v-if 也是惰性的：如果在初始渲染时条件为假，则什么也不做——在条件第一次变为真时才开始局部编译（编译会被缓存起来）。
+
+相比之下，v-show 简单得多——元素始终被编译并保留，只是简单地基于 CSS 切换。
+
+一般来说，v-if 有更高的切换消耗而 v-show 有更高的初始渲染消耗。因此，如果需要频繁切换 v-show 较好，如果在运行时条件不大可能改变 v-if 较好。
+</code></pre>
+</li>
+<li>
+<p>Ajax流程</p>
+</li>
+<li>
+<p>==和===的区别</p>
+</li>
+<li>
+<p>vue各个周期</p>
+</li>
+</ul>
+<h3>学长</h3>
+<ul>
+<li>存储方法</li>
+<li>数据结构</li>
+<li>缓存处理</li>
+</ul>
+<h3>其它参考</h3>
+<ul>
+<li><a href="https://boseny.github.io/2018/05/29/interview-exp/">记一次前端面经 | BosenYのblog</a></li>
+<li><a href="https://segmentfault.com/a/1190000013276124">vue的数据驱动原理及简单实现_个人文章 - SegmentFault 思否</a></li>
+<li><a href="https://yuchengkai.cn/">前端进阶之道</a></li>
+<li><a href="https://juejin.cn/post/6844903780236918797">Web前端JQuery面试题（一）</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1435954">字节跳动2019校招面经前端开发岗二</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1435955">字节跳动2019校招面经前端开发岗三</a></li>
+</ul>
+
+    </main>
+  </body>
+</html>

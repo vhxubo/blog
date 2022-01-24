@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+  <!-- [通过预加载 web 字体提高加载速度](https://web.dev/codelab-preload-web-fonts/) -->
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff"
+    as="font"
+    type="font/woff"
+    crossorigin
+  />
+  <style>
+    :root{--primary-color:#0052d9;--second-color:#4787f0;--max-width:1080px;--base-gray:#8b8b8b}@font-face{font-family:HarmonyOS_Sans_SC_Regular;font-style:normal;font-display:swap;src:url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2") format("woff2"),url("https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff") format("woff")}body{margin:0;font-family:PingFang SC,HarmonyOS_Sans_SC_Regular,Helvetica Neue,Microsoft YaHei,sans-serif!important;font-weight:400}*{box-sizing:border-box}ul{list-style:none;padding-inline-start:0}a{color:var(--primary-color);text-decoration:none}a:hover{text-decoration:underline;color:var(--second-color)}code{background-color:#d4e3fc;padding:.2em .4em;border-radius:6px}time{color:var(--base-gray);font-size:small;user-select:none}.header,main{margin:0 auto;max-width:var(--max-width);padding:0 32px}.header{display:flex;justify-content:space-between;align-items:center;height:44px;user-select:none}.header a{color:#333}.header__title{font-size:larger}main{margin-bottom:32px}.post{margin-bottom:18px}.post__title{font-size:larger;font-weight:700}.post__date{color:var(--base-gray);font-size:small}
+    code[class*=language-],pre[class*=language-]{color:#111b27;background:0 0;font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#8da1b9}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#8da1b9}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#e3eaf2}:not(pre)>code[class*=language-]{padding:.1em .3em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#3c526d}.token.punctuation{color:#111b27}.token.delimiter.important,.token.selector .parent,.token.tag,.token.tag .token.punctuation{color:#006d6d}.token.attr-name,.token.boolean,.token.boolean.important,.token.constant,.token.number,.token.selector .token.attribute{color:#755f00}.token.class-name,.token.key,.token.parameter,.token.property,.token.property-access,.token.variable{color:#005a8e}.token.attr-value,.token.color,.token.inserted,.token.selector .token.value,.token.string,.token.string .token.url-link{color:#116b00}.token.builtin,.token.keyword-array,.token.package,.token.regex{color:#af00af}.token.function,.token.selector .token.class,.token.selector .token.id{color:#7c00aa}.token.atrule .token.rule,.token.combinator,.token.keyword,.token.operator,.token.pseudo-class,.token.pseudo-element,.token.selector,.token.unit{color:#a04900}.token.deleted,.token.important{color:#c22f2e}.token.keyword-this,.token.this{color:#005a8e}.token.bold,.token.important,.token.keyword-this,.token.this{font-weight:700}.token.delimiter.important{font-weight:inherit}.token.italic{font-style:italic}.token.entity{cursor:help}.language-markdown .token.title,.language-markdown .token.title .token.punctuation{color:#005a8e;font-weight:700}.language-markdown .token.blockquote.punctuation{color:#af00af}.language-markdown .token.code{color:#006d6d}.language-markdown .token.hr.punctuation{color:#005a8e}.language-markdown .token.url>.token.content{color:#116b00}.language-markdown .token.url-link{color:#755f00}.language-markdown .token.list.punctuation{color:#af00af}.language-markdown .token.table-header{color:#111b27}.language-json .token.operator{color:#111b27}.language-scss .token.variable{color:#006d6d}.token.token.cr:before,.token.token.lf:before,.token.token.space:before,.token.token.tab:not(:empty):before{color:#3c526d}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button{color:#e3eaf2;background:#005a8e}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover{color:#e3eaf2;background:#005a8eda;text-decoration:none}div.code-toolbar>.toolbar.toolbar>.toolbar-item>span,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover{color:#e3eaf2;background:#3c526d}.line-highlight.line-highlight{background:#8da1b92f;background:linear-gradient(to right,#8da1b92f 70%,#8da1b925)}.line-highlight.line-highlight:before,.line-highlight.line-highlight[data-end]:after{background-color:#3c526d;color:#e3eaf2;box-shadow:0 1px #8da1b9}pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before{background-color:#3c526d1f}.line-numbers.line-numbers .line-numbers-rows{border-right:1px solid #8da1b97a;background:#d0dae77a}.line-numbers .line-numbers-rows>span:before{color:#3c526dda}.rainbow-braces .token.token.punctuation.brace-level-1,.rainbow-braces .token.token.punctuation.brace-level-5,.rainbow-braces .token.token.punctuation.brace-level-9{color:#755f00}.rainbow-braces .token.token.punctuation.brace-level-10,.rainbow-braces .token.token.punctuation.brace-level-2,.rainbow-braces .token.token.punctuation.brace-level-6{color:#af00af}.rainbow-braces .token.token.punctuation.brace-level-11,.rainbow-braces .token.token.punctuation.brace-level-3,.rainbow-braces .token.token.punctuation.brace-level-7{color:#005a8e}.rainbow-braces .token.token.punctuation.brace-level-12,.rainbow-braces .token.token.punctuation.brace-level-4,.rainbow-braces .token.token.punctuation.brace-level-8{color:#7c00aa}pre.diff-highlight>code .token.token.deleted:not(.prefix),pre>code.diff-highlight .token.token.deleted:not(.prefix){background-color:#c22f2e1f}pre.diff-highlight>code .token.token.inserted:not(.prefix),pre>code.diff-highlight .token.token.inserted:not(.prefix){background-color:#116b001f}.command-line .command-line-prompt{border-right:1px solid #8da1b97a}.command-line .command-line-prompt>span:before{color:#3c526dda}
+  </style>
+  <title>Word</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header__title">
+    <a href="/"> vhxubo's blog </a>
+  </div>
+
+  <div><a href="/about">关于</a></div>
+</header>
+
+    <main>
+      <h2>Word</h2>
+<div class="time">
+  <time datetime="2020-11-21T05:26:10Z"
+    >创建时间: 2020-11-21 05:26</time
+  >
+  <time datetime="2022-01-17T07:45:26Z"
+    >更新时间: 2022-01-17 07:45</time
+  >
+</div>
+<p><a href="https://zhuanlan.zhihu.com/p/22737822">一劳永逸，打造自己的word常规模板 - 知乎</a></p>
+<p><a href="https://jingyan.baidu.com/article/86112f13b0cbe027379787fc.html">Word中的尾注横线怎么删除-百度经验</a></p>
+<p><a href="https://zhidao.baidu.com/question/159839880.html">word中尾注后的内容怎样生成目录_百度知道</a></p>
+<h2>如何查看Word是否缺失字体</h2>
+<blockquote>
+<p>https://zhidao.baidu.com/question/923084312055940659.html</p>
+</blockquote>
+<p>文件--选项--高级--显示文档内容--字体替换</p>
+<p><img src="https://user-images.githubusercontent.com/17352372/120088807-f9468b00-c126-11eb-9e42-037520040d0a.png" alt="image"></p>
+<h2>将图片改为嵌入型</h2>
+<blockquote>
+<p>嵌入型的图片和字符类型相同，方便居中操作</p>
+</blockquote>
+<ol>
+<li>Word 选项</li>
+<li>剪切、复制和粘贴</li>
+<li>将图片插入、粘贴为：嵌入型</li>
+</ol>
+<h2>图片插入题注</h2>
+<p><code>Alt s p</code></p>
+<p>可以对题注样式进行设置：</p>
+<ul>
+<li>设置字体与居中</li>
+<li>段后1行</li>
+</ul>
+<p><strong>设置自动题注</strong>，可以选择</p>
+<h2>设计自己的毕业设计模板</h2>
+<ul>
+<li>直接修改内置的 <strong>标题 1、2、3</strong>，否则题注前无法自动引用章节号</li>
+<li>默认不/谨慎修改<strong>正文</strong>格式，另：应该可以取消其他的基准，但是无法确保原始内容不变</li>
+<li>定义新的多级列表</li>
+</ul>
+<h3>设置样式</h3>
+<blockquote>
+<p>建议将样式基准改为：无样式。在默认样式上直接修改，不建议新建，否则<strong>题注前将无法自动引用章节号</strong></p>
+</blockquote>
+<p>全局西文字符：Times New Roman
+全局中文字符：宋体</p>
+<p>论文正文：宋体小四，单倍行距（有时为固定磅22/23）</p>
+<ul>
+<li>标题 1：黑体三号，居中，单倍行距（如果需要空行的话，可以调整段后1行，省去回车行）
+<ul>
+<li>设置段前分页：段落、换行与分页、段前分页</li>
+</ul>
+</li>
+<li>标题 2：黑体四号，左对齐，单倍行距</li>
+<li>标题 3：黑体小四，左对齐，单倍行距</li>
+<li>题注：楷体GB2312，五号，居中，单倍行距
+<ul>
+<li>新增需要的标签</li>
+<li>设置编号（包含章节号，标题 1，连字符）</li>
+<li>自动插入题注</li>
+</ul>
+</li>
+</ul>
+<h3>实现标题 1为第1章而后为正常标号</h3>
+<p>使用<strong>定义新的多级列表</strong>功能增加自动编号</p>
+<p>第 1 章 概述
+1.1 项目介绍
+1.1.1 应用场景</p>
+<ul>
+<li>级别1
+<ul>
+<li>设置输入编号的格式为<strong>第 1 章</strong></li>
+<li>链接到标题 1</li>
+<li>编号之后设置为制表符</li>
+<li>制表符添加2厘米</li>
+</ul>
+</li>
+<li>级别2
+<ul>
+<li>将正规形式编号勾上</li>
+<li>链接到标题 2</li>
+<li>编号之后设置为空格</li>
+</ul>
+</li>
+<li>级别3与级别2相同</li>
+</ul>
+<h2>禁用<code>Insert</code>按键</h2>
+<p><img src="https://user-images.githubusercontent.com/17352372/116067643-eb32c400-a6bb-11eb-85bd-c9d0dc64b876.png" alt="image"></p>
+<h2>尾注</h2>
+<blockquote>
+<p><a href="https://wenku.baidu.com/view/ca87c3550066f5335a8121dc.html">尾注后面加空白页的方法 - 百度文库</a>
+<a href="https://zhuanlan.zhihu.com/p/54344547">word操作技巧：有关脚注和尾注的使用方法 - 知乎</a>
+<a href="https://www.zhihu.com/question/382084573">本科毕业论文引用参考文献是直接打出来[1]然后点上标，在文末列出参考文献，还是点引用插入尾注。？ - 知乎</a>
+<a href="https://jeffdingzone.com/2018/11/zotero%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B/#word">Zotero安装与使用简介 – 杰峰的博客</a></p>
+</blockquote>
+<ol>
+<li>加入尾注数据</li>
+<li>进入草稿模式（视图-&gt;草稿）</li>
+<li>显示备注（引用-&gt;脚注）</li>
+<li>删除尾注分隔符和尾注延续分隔符</li>
+<li>修改尾注样式为<code>1,2,3...</code>，设置在节的结尾插入</li>
+<li>最后替换<code>^e</code>为<code>[^&amp;]</code></li>
+</ol>
+<h3>防止加入尾注之后，后面标题格式丢失</h3>
+<p><img src="https://user-images.githubusercontent.com/17352372/118405328-0769c580-b6aa-11eb-9948-7e5583a00af9.png" alt="屏幕截图(27)"></p>
+<p><img src="https://user-images.githubusercontent.com/17352372/118405072-54e53300-b6a8-11eb-96c5-63ad7708daeb.png" alt="屏幕截图(24)"></p>
+<p><img src="https://user-images.githubusercontent.com/17352372/118405209-4a776900-b6a9-11eb-8367-725d4288b906.png" alt="屏幕截图(25)"></p>
+
+    </main>
+  </body>
+</html>
