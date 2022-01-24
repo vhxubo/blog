@@ -5,4 +5,7 @@ module.exports = function (eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
   eleventyConfig.addPlugin(syntaxHighlight);
+  return {
+    pathPrefix: "/blog/",
+  };
 };
