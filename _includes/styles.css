@@ -9,7 +9,8 @@
   font-family: HarmonyOS_Sans_SC_Regular;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/HarmonyOS_Sans_SC_Regular.ttf");
+  src: url("/fonts/HarmonyOS_Sans_SC_Regular.woff2") format("woff2"),
+    url("/fonts/HarmonyOS_Sans_SC_Regular.woff") format("woff");
 }
 
 body {
