@@ -1,6 +1,21 @@
 {% capture css %} {% include 'styles.css' %} {% endcapture %} {% capture
 prism-css %} {% include 'prism-coldark-cold.css' %} {% endcapture %}
 <head>
+  <!-- [通过预加载 web 字体提高加载速度](https://web.dev/codelab-preload-web-fonts/) -->
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="https://cdn.jsdelivr.net/gh/vhxubo/blog@main/fonts/HarmonyOS_Sans_SC_Regular.woff"
+    as="font"
+    type="font/woff"
+    crossorigin
+  />
   <style>
     {{ css | cssmin }}
     {{ prism-css | cssmin }}
