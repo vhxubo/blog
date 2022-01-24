@@ -54,7 +54,7 @@ useEffect(() => {
 > 获取 DOM 对象
 
 
-```JavaScript
+```javascript
 // 因为在最开始的时候不加载 DOM, 需要配合 useEffect 使用
 cosnt elemRef = useRef()
 
