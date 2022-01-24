@@ -51,7 +51,7 @@ npm install -g tldr
 
 ## oh-my-zsh 配置
 
-```sh
+```bash
 # 2021年 08月 18日 星期三 16:09:17 CST
 # ~/.zshrc
 # cat ~/.zshrc | egrep -v '^#|^$' | xsel -b
