@@ -6,11 +6,11 @@
 - [Top 50 Vim Configuration Options - ShortcutFoo Blog](https://www.shortcutfoo.com/blog/top-50-vim-configuration-options/)
 
 
-```
+```shell
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-```
+```bash
 " ~/.config/nvim/init.vim
 call plug#begin()
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -70,7 +70,7 @@ https://www.zhihu.com/question/19863631/answer/145592576
 此外, 从外部的剪贴板数据, 可以通过 `Shift + Insert` 粘贴到 vim/neovim 中
 
 > [Windows/Mac/Linux 如何将内容输出到剪贴板 - SegmentFault 思否](https://segmentfault.com/a/1190000024579429)
-```
+```shell
 // 将输出复制至剪贴板
 $ echo "hello linux" | xsel -b
 
