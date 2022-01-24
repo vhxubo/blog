@@ -15,7 +15,7 @@ pagination:
         {{ post.data.date | date: "%Y-%m-%d" }}
       </div>
       <div class="post__title">
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
       </div>
     </div>
   </li>
