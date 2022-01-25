@@ -1,7 +1,7 @@
 :root {
   --primary-color: #0052d9;
   --second-color: #4787f0;
-  --max-width: 1080px;
+  --max-width: 1000px;
   --base-gray: #8b8b8b;
 }
 
@@ -20,6 +20,7 @@ body {
   font-family: PingFang SC, HarmonyOS_Sans_SC_Regular, Helvetica Neue,
     Microsoft YaHei, sans-serif !important;
   font-weight: 400;
+  color: #333;
 }
 
 * {
@@ -53,11 +54,16 @@ time {
   user-select: none;
 }
 
+p,
+a {
+  line-height: 1.75;
+}
+
 .header,
 main {
   margin: 0 auto;
   max-width: var(--max-width);
-  padding: 0 32px;
+  padding: 0 16px;
 }
 
 .header {
