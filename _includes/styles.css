@@ -21,6 +21,7 @@ body {
     Microsoft YaHei, sans-serif !important;
   font-weight: 400;
   color: #333;
+  line-height: 1.75;
 }
 
 * {
@@ -52,11 +53,6 @@ time {
   color: var(--base-gray);
   font-size: small;
   user-select: none;
-}
-
-p,
-a {
-  line-height: 1.75;
 }
 
 .header,
