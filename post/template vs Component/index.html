@@ -42,8 +42,8 @@
   <time datetime="2022-01-14T13:15:58Z"
     >创建时间: 2022-01-14 21:15</time
   >
-  <time datetime="2022-01-17T07:45:52Z"
-    >更新时间: 2022-01-17 15:45</time
+  <time datetime="2022-01-25T08:53:31Z"
+    >更新时间: 2022-01-25 16:53</time
   >
 </div>
 <p>在使用 Component 时, 我们会发现, 在渲染出来的的 wxml 中, 拥有很多的 template</p>
@@ -52,7 +52,7 @@
 <p>Component 拥有完整的事件机制, 而 template 只留了 name 属性作为 template 的标识符, data 属性用来传输数据</p>
 <p><em>模板拥有自己的作用域，只能使用 data 传入的数据以及模板定义文件中定义的 <code>&lt;wxs /&gt;</code> 模块。</em></p>
 <p>在使用时, Component 需要在 json 文件中引用, 而 template 可以直接写在 wxml 中, 或者使用 import/include 引用, 使用 is 指明使用的 template</p>
-<p>template 其实就相当于 整个 wxml 文件外套了一层 <template> , 在<template> 中还可以包含 <wxs></p>
+<p>template 其实就相当于 整个 wxml 文件外套了一层 <code>&lt;template&gt;</code> , 在<code>&lt;template&gt;</code> 中还可以包含 <code>&lt;wxs&gt;</code></p>
 <p><strong>在小程序的 Mustache 中, <code>&lt;template is=&quot;&quot; data={{title: 'test', body: 'hello'}}&gt;&lt;/template&gt;</code>中的对象需要进行解耦</strong></p>
 <h2>参考链接</h2>
 <ul>
