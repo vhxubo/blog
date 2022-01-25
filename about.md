@@ -25,3 +25,4 @@ CSS 参考 TDesign 颜色规范, 遵循 BEM 标准
 - [Generate Eleventy (11ty) Pages From External Data | egghead.io](https://egghead.io/lessons/11ty-generate-eleventy-11ty-pages-from-external-data)
 - [Liquid 模板语言中文文档 | Liquid 中文网](https://liquid.bootcss.com/)
 - [Color 色彩 - TDesign](https://tdesign.tencent.com/design/color)
+- [优化阅读体验，网站预设字体的CSS最佳写法 | 设计达人](https://www.shejidaren.com/the-best-css-font-in-web-design.html)
