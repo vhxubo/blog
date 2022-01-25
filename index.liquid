@@ -12,7 +12,7 @@ pagination:
   <li>
     <div class="post">
       <div class="post__date">
-        {{ post.data.date | date: "%Y-%m-%d" }}
+        {{ post.data.date | datetz | date: "%Y-%m-%d" }}
       </div>
       <div class="post__title">
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
@@ -22,9 +22,11 @@ pagination:
   {% endfor %}
 </ul>
 <nav class="page__nav">
-  {% if pagination.href.previous %}<a href="{{ pagination.href.previous | url }}"
+  {% if pagination.href.previous %}<a
+    href="{{ pagination.href.previous | url }}"
     >&#8592;上一页</a
-  >{% endif %} {% if pagination.href.next %}<a href="{{ pagination.href.next | url }}"
+  >{% endif %} {% if pagination.href.next %}<a
+    href="{{ pagination.href.next | url }}"
     >下一页&#8594;</a
   >{% endif %}
 </nav>
