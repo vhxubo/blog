@@ -17,10 +17,10 @@ templateEngineOverride: md, liquid
 
 <div class="time">
   <time datetime="{{ post.created_at }}"
-    >创建时间: {{ post.created_at | datetz | date: "%Y-%m-%d %H:%M" }}</time
+    >创建时间: {{ post.created_at | datetztime }}</time
   >
   <time datetime="{{ post.updated_at }}"
-    >更新时间: {{ post.updated_at | datetz | date: "%Y-%m-%d %H:%M" }}</time
+    >更新时间: {{ post.updated_at | datetztime }}</time
   >
 </div>
 

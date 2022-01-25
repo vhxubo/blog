@@ -12,7 +12,7 @@ pagination:
   <li>
     <div class="post">
       <div class="post__date">
-        {{ post.data.date | datetz | date: "%Y-%m-%d" }}
+        {{ post.data.date | datetzday }}
       </div>
       <div class="post__title">
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
