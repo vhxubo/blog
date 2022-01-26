@@ -1,0 +1,24 @@
+---
+layout: base
+title: draft
+pagination:
+  data: collections.draft
+  size: 10
+  alias: drafts
+permalink: "/draft/"
+---
+
+<ul>
+  {% for draft in drafts %}
+  <li>
+    <div class="post">
+      <div class="post__date">
+        {{ draft.data.date | datetzday }}
+      </div>
+      <div class="post__title">
+        <a href="{{ draft.url | url }}">{{ draft.data.title }}</a>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

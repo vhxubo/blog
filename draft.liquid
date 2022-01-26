@@ -1,0 +1,27 @@
+---
+pagination:
+  data: drafts
+  size: 1
+  alias: draft
+  addAllPagesToCollections: true
+layout: base
+tags: draft
+permalink: "/draft/{{ draft.title }}/"
+eleventyComputed:
+  title: "{{ draft.title }}"
+  date: "{{ draft.created_at }}"
+templateEngineOverride: md, liquid
+---
+
+# {{ draft.title }}
+
+<div class="time">
+  <time datetime="{{ draft.created_at }}"
+    >创建时间: {{ draft.created_at | datetztime }}</time
+  >
+  <time datetime="{{ draft.updated_at }}"
+    >更新时间: {{ draft.updated_at | datetztime }}</time
+  >
+</div>
+
+{{ draft.body }}
