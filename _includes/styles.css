@@ -51,9 +51,16 @@ a:hover {
 }
 
 code {
+  font-family: "Fira Code", monospace;
   background-color: #d4e3fc;
   padding: 0.2em 0.4em;
   border-radius: 6px;
+  font-size: 14px;
+}
+@supports (font-variation-settings: normal) {
+  code {
+    font-family: "Fira Code VF", monospace;
+  }
 }
 
 time {
