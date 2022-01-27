@@ -28,9 +28,15 @@ body {
   box-sizing: border-box;
 }
 
-ul {
+.list {
   list-style: none;
   padding-inline-start: 0;
+}
+
+ul,
+ol {
+  padding-inline-start: 0;
+  padding-left: 2em;
 }
 
 blockquote {
